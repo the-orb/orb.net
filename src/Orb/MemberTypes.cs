@@ -8,6 +8,8 @@ namespace Orb
 {
     public enum MemberTypes : byte
     {
+        Company = OrganizationTypes.Company,
+
         Individual = OrganizationTypes.Family + 1,
 
         Family = OrganizationTypes.Family,

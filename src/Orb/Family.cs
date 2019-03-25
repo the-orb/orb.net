@@ -11,7 +11,5 @@ namespace Orb
         public string Description { get; set; }
 
         public override byte Level => LEVEL;
-
-        public string Name { get; set; }
     }
 }

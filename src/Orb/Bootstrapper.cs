@@ -10,6 +10,12 @@
             container.Register<OrbQuery>();
             container.Register<OrbSchema>();
 
+            container.Register<Company>();
+            container.Register<CompanyInputType>();
+            container.Register<CompanyMutation>();
+            container.Register<CompanyQuery>();
+            container.Register<CompanyType>();
+
             container.Register<Family>();
             container.Register<FamilyInputType>();
             container.Register<FamilyMutation>();

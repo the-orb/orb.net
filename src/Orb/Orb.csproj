@@ -73,12 +73,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrapper.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="CompanyEntityConfiguration.cs" />
+    <Compile Include="CompanyInputType.cs" />
+    <Compile Include="CompanyMutation.cs" />
+    <Compile Include="CompanyQuery.cs" />
+    <Compile Include="CompanyType.cs" />
+    <Compile Include="Dimension.cs" />
     <Compile Include="Family.cs" />
     <Compile Include="FamilyEntityConfiguration.cs" />
     <Compile Include="FamilyInputType.cs" />
     <Compile Include="FamilyMutation.cs" />
     <Compile Include="FamilyQuery.cs" />
     <Compile Include="FamilyType.cs" />
+    <Compile Include="Feed.cs" />
     <Compile Include="Individual.cs" />
     <Compile Include="IndividualEntityConfiguration.cs" />
     <Compile Include="IndividualInputType.cs" />

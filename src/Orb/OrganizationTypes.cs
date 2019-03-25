@@ -8,6 +8,8 @@ namespace Orb
 {
     public enum OrganizationTypes : byte
     {
+        Company = 3,
+
         Family = 3,
 
         Market = 1,

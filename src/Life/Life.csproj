@@ -65,6 +65,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bootstrapper.cs" />
     <Compile Include="Class.cs" />
     <Compile Include="Domain.cs" />
     <Compile Include="Kingdom.cs" />
@@ -76,6 +77,16 @@
     <None Include="app.config" />
     <None Include="data.json" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{d4542ca2-eb2f-4962-b4c9-a26de3ebbebe}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Relay\Relay.csproj">
+      <Project>{1bf08a0a-9f4a-4371-be33-e1c10c53d7f7}</Project>
+      <Name>Relay</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
