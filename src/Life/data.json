@@ -1,0 +1,1854 @@
+[
+  {
+    "tag": "domain",
+    "text": "Prokaryota",
+    "type": "group",
+    "items": [
+      {
+        "tag": "kingdom",
+        "text": "Archaea",
+        "type": "group",
+        "items": [
+          {
+            "tag": "phylum",
+            "text": "Crenarchaeota",
+            "type": "group",
+            "items": [
+              {
+                "tag": "class",
+                "text": "“Aigarchaeota”",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "order",
+                    "text": "Ca. Caldiarchaeum N.N."
+                  }
+                ]
+              },
+              {
+                "tag": "class",
+                "text": "“Korarchaeota”",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "order",
+                    "text": "Ca. Korarchaeum N.N."
+                  }
+                ]
+              },
+              {
+                "tag": "class",
+                "text": "“Thaumarchaeota”",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "order",
+                    "text": "Cenarchaeales"
+                  }
+                ]
+              },
+              {
+                "tag": "class",
+                "text": "Thermoprotei (Crenarchaeota)",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "order",
+                    "text": "Acidilobales"
+                  },
+                  {
+                    "tag": "order",
+                    "text": "Desulfurococcales"
+                  },
+                  {
+                    "tag": "order",
+                    "text": "Fervidicoccales"
+                  },
+                  {
+                    "tag": "order",
+                    "text": "Sulfolobales"
+                  },
+                  {
+                    "tag": "order",
+                    "text": "Thermoproteales"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "phylum",
+            "text": "Euryarchaeota",
+            "type": "group",
+            "items": [
+              {
+                "tag": "class",
+                "text": "Archaeoglobi",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "order",
+                    "text": "Archaeoglobales"
+                  }
+                ]
+              },
+              {
+                "tag": "class",
+                "text": "Halobacteria",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "order",
+                    "text": "Halobacteriales"
+                  }
+                ]
+              },
+              {
+                "tag": "class",
+                "text": "Methanobacteria",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "order",
+                    "text": "Methanobacteriales"
+                  }
+                ]
+              },
+              {
+                "tag": "class",
+                "text": "Methanococci",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "order",
+                    "text": "Methanococcales"
+                  }
+                ]
+              },
+              {
+                "tag": "class",
+                "text": "“Methanomicrobia”",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "order",
+                    "text": "Methanocalculus N.N."
+                  },
+                  {
+                    "tag": "order",
+                    "text": "Methanocellales"
+                  },
+                  {
+                    "tag": "order",
+                    "text": "Methanomicrobiales"
+                  },
+                  {
+                    "tag": "order",
+                    "text": "Methanosarcinales"
+                  }
+                ]
+              },
+              {
+                "tag": "class",
+                "text": "Methanopyri",
+                "type": "group",
+                "items": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "tag": "class",
+                "text": "“Nanohaloarchaea”",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "order",
+                    "text": "e.g., “Ca. Nanosalinarum” N.N."
+                  }
+                ]
+              },
+              {
+                "tag": "class",
+                "text": "Thermococci",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "order",
+                    "text": "Thermococcales"
+                  }
+                ]
+              },
+              {
+                "tag": "class",
+                "text": "Thermoplasmata",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "order",
+                    "text": "Thermoplasmatales"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "kingdom",
+        "text": "Bacteria (Eubacteria)",
+        "type": "group",
+        "items": [
+          {
+            "tag": "subkingdom",
+            "text": "Negibacteria",
+            "type": "group",
+            "items": [
+              {
+                "tag": "phylum",
+                "text": "Acidobacteria",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Aquificae",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Armatimonadetes",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Bacteroidetes",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Caldiserica",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Chlamydiae",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Chlorobi",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Chrysiogenetes",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Cyanobacteria (Cyanophyta)",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Deferribacteres",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Deinococcus-Thermus (Hadobacteria)",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Dictyoglomi",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Elusimicrobia",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Fibrobacteres",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Fusobacteria",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Gemmatimonadetes",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Lentisphaerae",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Nitrospira",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Planctomycetes",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Proteobacteria",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Spirochaetae",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Synergistetes",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Thermodesulfobacteria",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Thermotogae",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Verrucomicrobia",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "subkingdom",
+            "text": "Posibacteria",
+            "type": "group",
+            "items": [
+              {
+                "tag": "phylum",
+                "text": "Actinobacteria",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Chloroflexi (Chlorobacteria)",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+
+              {
+                "tag": "phylum",
+                "text": "Firmicutes",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Tenericutes",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tag": "domain",
+    "text": "Eukaryota",
+    "type": "group",
+    "items": [
+      {
+        "tag": "kingdom",
+        "text": "Protozoa",
+        "type": "group",
+        "items": [
+          {
+            "tag": "subkingdom",
+            "text": "Eozoa",
+            "type": "group",
+            "items": [
+              {
+                "tag": "infra-kingdom",
+                "text": "Euglenozoa",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "phylum",
+                    "text": "Euglenozoa",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "subphylum",
+                        "text": "N.N.",
+                        "type": "group",
+                        "items": [
+                          {
+                            "tag": "class",
+                            "text": "Diplonemea",
+                            "type": "group",
+                            "items": [
+                              {
+                                "tag": "order",
+                                "text": "Diplonemida"
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "class",
+                            "text": "Kinetoplastea",
+                            "type": "group",
+                            "items": [
+                              {
+                                "tag": "order",
+                                "text": "Bodonida"
+                              },
+                              {
+                                "tag": "order",
+                                "text": "Prokinetoplastida"
+                              },
+                              {
+                                "tag": "order",
+                                "text": "Trypanosomatida"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "subphylum",
+                        "text": "Euglenoida",
+                        "type": "group",
+                        "items": [
+                          {
+                            "tag": "class",
+                            "text": "N.N.",
+                            "type": "group",
+                            "items": [
+                              {
+                                "tag": "order",
+                                "text": "Petalomonadida"
+                              },
+                              {
+                                "tag": "order",
+                                "text": "Ploeotiida"
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "class",
+                            "text": "Euglenophyceae",
+                            "type": "group",
+                            "items": [
+                              {
+                                "tag": "order",
+                                "text": "Euglenida"
+                              },
+                              {
+                                "tag": "order",
+                                "text": "Eutreptiida"
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "class",
+                            "text": "Peranemea",
+                            "type": "group",
+                            "items": [
+                              {
+                                "tag": "order",
+                                "text": "Heteronemida"
+                              },
+                              {
+                                "tag": "order",
+                                "text": "Peranemida"
+                              },
+                              {
+                                "tag": "order",
+                                "text": "Rhabdomonadida"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "subphylum",
+                        "text": "Symbiontida",
+                        "type": "group",
+                        "items": [
+                          {
+                            "tag": "class",
+                            "text": "Postgaardea",
+                            "type": "group",
+                            "items": [
+                              {
+                                "tag": "order",
+                                "text": "Postgaardida"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "Excavada Infrakingdom",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "phylum",
+                    "text": "Loukozoa",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "subphylum",
+                        "text": "Eolouka",
+                        "type": "group",
+                        "items": [
+                          {
+                            "tag": "class",
+                            "text": "Jakobea",
+                            "type": "group",
+                            "items": [
+                              {
+                                "tag": "order",
+                                "text": "Jakobida"
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "class",
+                            "text": "Tsukubea",
+                            "type": "group",
+                            "items": [
+                              {
+                                "tag": "order",
+                                "text": "Tsukubamonadida"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "subphylum",
+                        "text": "Neolouka",
+                        "type": "group",
+                        "items": [
+                          {
+                            "tag": "class",
+                            "text": "Malawimonadea",
+                            "type": "group",
+                            "items": [
+                              {
+                                "tag": "order",
+                                "text": "Malawimonadida"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "phylum",
+                    "text": "Metamonada",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "class",
+                        "text": "Anaeromonadea",
+                        "type": "group",
+                        "items": [
+                          {
+                            "tag": "order",
+                            "text": "Oxymonadida"
+                          },
+                          {
+                            "tag": "order",
+                            "text": "Trimastigida"
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "class",
+                        "text": "Carpomonadea",
+                        "type": "group",
+                        "items": [
+                          {
+                            "tag": "order",
+                            "text": "Carpediemonadida"
+                          },
+                          {
+                            "tag": "order",
+                            "text": "Chilomastigida"
+                          },
+                          {
+                            "tag": "order",
+                            "text": "Dysnectida"
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "class",
+                        "text": "Eopharyngea",
+                        "type": "group",
+                        "items": [
+                          {
+                            "tag": "order",
+                            "text": "Diplomonadida"
+                          },
+                          {
+                            "tag": "order",
+                            "text": "Retortamonadida"
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "class",
+                        "text": "Trichomonadea",
+                        "type": "group",
+                        "items": [
+                          {
+                            "tag": "order",
+                            "text": "Cristamonadida"
+                          },
+                          {
+                            "tag": "order",
+                            "text": "Spirotrichonymphida"
+                          },
+                          {
+                            "tag": "order",
+                            "text": "Trichomonadida"
+                          },
+                          {
+                            "tag": "order",
+                            "text": "Tritrichomonadida"
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "class",
+                        "text": "Trichonymphea",
+                        "type": "group",
+                        "items": [
+                          {
+                            "tag": "order",
+                            "text": "Lophomonadida"
+                          },
+                          {
+                            "tag": "order",
+                            "text": "Trichonymphida"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "phylum",
+                    "text": "Percolozoa",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "subphylum",
+                        "text": "Pharyngomonada",
+                        "type": "group",
+                        "items": [
+                          {
+                            "tag": "class",
+                            "text": "",
+                            "type": "group",
+                            "items": [
+                              {
+                                "tag": "order",
+                                "text": ""
+                              },
+                              {
+                                "tag": "order",
+                                "text": ""
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "subphylum",
+                        "text": "Tetramitia",
+                        "type": "group",
+                        "items": [
+                          {
+                            "tag": "class",
+                            "text": "",
+                            "type": "group",
+                            "items": [
+                              {
+                                "tag": "order",
+                                "text": ""
+                              },
+                              {
+                                "tag": "order",
+                                "text": ""
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "subkingdom",
+            "text": "Sarcomastigota",
+            "type": "group",
+            "items": [
+              {
+                "tag": "phylum",
+                "text": "Amoebozoa",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "subphylum",
+                    "text": "Conosa",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "class",
+                        "text": "Archamoebea",
+                        "type": "group",
+                        "items": [
+                          {
+                            "tag": "order",
+                            "text": ""
+                          },
+                          {
+                            "tag": "order",
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "class",
+                        "text": "Dictyostelea",
+                        "type": "group",
+                        "items": [
+                          {
+                            "tag": "order",
+                            "text": ""
+                          },
+                          {
+                            "tag": "order",
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "class",
+                        "text": "",
+                        "type": "group",
+                        "items": [
+                          {
+                            "tag": "order",
+                            "text": ""
+                          },
+                          {
+                            "tag": "order",
+                            "text": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "subphylum",
+                    "text": "Lobosa",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "class",
+                        "text": "Discosea",
+                        "type": "group",
+                        "items": [
+                          {
+                            "tag": "order",
+                            "text": ""
+                          },
+                          {
+                            "tag": "order",
+                            "text": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "subphylum",
+                    "text": "Choanofila",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "class",
+                        "text": "",
+                        "type": "group",
+                        "items": [
+                          {
+                            "tag": "order",
+                            "text": ""
+                          },
+                          {
+                            "tag": "order",
+                            "text": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "subphylum",
+                    "text": "Paramycia",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "class",
+                        "text": "",
+                        "type": "group",
+                        "items": [
+                          {
+                            "tag": "order",
+                            "text": ""
+                          },
+                          {
+                            "tag": "order",
+                            "text": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Microsporidia",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "kingdom",
+        "text": "Chromista",
+        "type": "group",
+        "items": [
+          {
+            "text": "Subkingdom",
+            "type": "group",
+            "items": [
+              {
+                "tag": "phylum",
+                "text": "",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "kingdom",
+        "text": "Plantae",
+        "type": "group",
+        "items": [
+          {
+            "text": "Subkingdom",
+            "type": "group",
+            "items": [
+              {
+                "tag": "phylum",
+                "text": "",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "kingdom",
+        "text": "Fungi",
+        "type": "group",
+        "items": [
+          {
+            "text": "Subkingdom",
+            "type": "group",
+            "items": [
+              {
+                "tag": "phylum",
+                "text": "",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "kingdom",
+        "text": "Animalia",
+        "type": "group",
+        "items": [
+          {
+            "tag": "subkingdom",
+            "text": "N.N.",
+            "type": "group",
+            "items": [
+              {
+                "tag": "phylum",
+                "text": "Cnidaria",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Ctenophora",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Placozoa",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Porifera",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "subkingdom",
+            "text": "Bilateria",
+            "type": "group",
+            "items": [
+              // INFRAKINGDOM PROTOSTOMIA
+              // Superphylum N.N.
+              {
+                "tag": "phylum",
+                "text": "Chaetognatha",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Orthonectida",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Rhombozoa",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              // Superphylum Ecdysozoa
+              {
+                "tag": "phylum",
+                "text": "Arthropoda",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Kinorhyncha",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Loricifera",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Nematoda",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Nematomorpha",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": ""
+                      },
+                      {
+                        "tag": "order",
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Onychophora",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "Udeonycophora",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": "Euonycophora"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Priapula (Priapulida)",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "N.N. (e.g., Priapulidae)"
+                  }
+                ]
+              },
+              {
+                "tag": "phylum",
+                "text": "Tardigrada",
+                "type": "group",
+                "items": [
+                  {
+                    "tag": "class",
+                    "text": "Eutardigrada",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": "Apochela"
+                      },
+                      {
+                        "tag": "order",
+                        "text": "Parachela"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "class",
+                    "text": "Heterotardigrada",
+                    "type": "group",
+                    "items": [
+                      {
+                        "tag": "order",
+                        "text": "Arthrotardigrada"
+                      },
+                      {
+                        "tag": "order",
+                        "text": "Echiniscoidea"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

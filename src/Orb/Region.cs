@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Orb
+{
+    public class Region : Organization
+    {
+        public const byte LEVEL = (byte)OrganizationTypes.Region;
+
+        public override byte Level => LEVEL;
+    }
+}
