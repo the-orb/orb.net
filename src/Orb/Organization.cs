@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Orb
 {
-    public abstract class Organization : Member
+    public class Organization : Member
     {
-        public abstract byte Level { get; }
     }
 }

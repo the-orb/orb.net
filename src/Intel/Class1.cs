@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Orb
+namespace Intel
 {
-    class RegionEntityConfiguration
+    public class Class1
     {
     }
 }

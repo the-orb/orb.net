@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Worker.Console", "Worker.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Worker.Web", "Worker.Web\Worker.Web.csproj", "{F23E87CC-A36C-4591-AFA3-3FFB46ACF084}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intel", "Intel\Intel.csproj", "{988FFB88-7099-4082-9C7A-5CB325C335A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meta", "Meta\Meta.csproj", "{D9719DF8-9006-4271-9D30-CC246A48AE8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +115,14 @@ Global
 		{F23E87CC-A36C-4591-AFA3-3FFB46ACF084}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F23E87CC-A36C-4591-AFA3-3FFB46ACF084}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F23E87CC-A36C-4591-AFA3-3FFB46ACF084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{988FFB88-7099-4082-9C7A-5CB325C335A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{988FFB88-7099-4082-9C7A-5CB325C335A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{988FFB88-7099-4082-9C7A-5CB325C335A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{988FFB88-7099-4082-9C7A-5CB325C335A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9719DF8-9006-4271-9D30-CC246A48AE8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9719DF8-9006-4271-9D30-CC246A48AE8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9719DF8-9006-4271-9D30-CC246A48AE8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9719DF8-9006-4271-9D30-CC246A48AE8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

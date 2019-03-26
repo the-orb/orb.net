@@ -12,10 +12,10 @@ namespace Orb
 
         Family = 3,
 
-        Market = 1,
+        Market = 0,
 
         Network = 2,
 
-        Region = 0
+        Region = 1
     }
 }

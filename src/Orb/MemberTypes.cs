@@ -14,6 +14,10 @@ namespace Orb
 
         Family = OrganizationTypes.Family,
 
-        Network = OrganizationTypes.Network
+        Market = OrganizationTypes.Market,
+
+        Network = OrganizationTypes.Network,
+
+        Region = OrganizationTypes.Region,
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Raven.Client.Documents;
+using Raven.Client.ServerWide;
 using Raven.Embedded;
 using System;
 
@@ -16,7 +17,15 @@ namespace Store
 
                 if (Embedded)
                 {
-                    store = EmbeddedServer.Instance.GetDocumentStore(new DatabaseOptions(DatabaseName));
+                    EmbeddedServer.Instance.StartServer();
+
+                    EmbeddedServer.Instance.OpenStudioInBrowser();
+
+                    var record = new DatabaseRecord(DatabaseName);
+
+                    var options = new DatabaseOptions(record);
+
+                    store = EmbeddedServer.Instance.GetDocumentStore(options);
                 }
                 else
                 {
@@ -26,6 +35,8 @@ namespace Store
                         Database = DatabaseName
                     };
                 }
+
+                // store.OnAfterSaveChanges
 
                 return store.Initialize();
             });

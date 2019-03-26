@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Orb
 {
-    class MembershipEntityConfiguration
+    public enum MarketTypes
     {
+        Banking,
+
+        Hospitality, // hotels
+
+        Internet
     }
 }

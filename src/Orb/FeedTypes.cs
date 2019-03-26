@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Orb
 {
-    public class FamilyEntityConfiguration
+    public enum FeedTypes
     {
+        Campaign,
+
+        Product,
+
+        Service
     }
 }
