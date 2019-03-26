@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class OrbData : DbContext
+    public class OrbDbContext : DbContext
     {
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

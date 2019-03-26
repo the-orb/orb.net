@@ -10,7 +10,7 @@ namespace Orb
     {
         Company = OrganizationTypes.Company,
 
-        Individual = OrganizationTypes.Family + 1,
+        Individual = 255,
 
         Family = OrganizationTypes.Family,
 

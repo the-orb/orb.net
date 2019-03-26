@@ -4,7 +4,7 @@ namespace Auth
 {
     class RoleQuery : ObjectGraphType
     {
-        public RoleQuery(IAuthData data)
+        public RoleQuery(IRoleService service)
         {
             Name = "RoleQuery";
 
@@ -13,7 +13,7 @@ namespace Auth
                 arguments: new QueryArguments(
                     new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "mame", Description = "name of the role" }
                 ),
-                resolve: context => data.GeRoleByNameAsync(context.GetArgument<string>("name"))
+                resolve: context => service.GeRoleByNameAsync(context.GetArgument<string>("name"))
             );
         }
     }

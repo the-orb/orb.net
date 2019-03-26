@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Orb
+﻿namespace Orb
 {
     public class Organization : Member
     {
+        public override byte Level { get; internal set; } = (byte)MemberTypes.Individual - 1;
     }
 }

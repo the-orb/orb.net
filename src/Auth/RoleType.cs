@@ -4,7 +4,7 @@ namespace Auth
 {
     public class RoleType : ObjectGraphType<Role>
     {
-        public RoleType(IAuthData data)
+        public RoleType(IRoleService data)
         {
             Name = "Role";
 

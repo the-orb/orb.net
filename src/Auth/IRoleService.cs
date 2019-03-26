@@ -6,22 +6,14 @@ using System.Threading.Tasks;
 
 namespace Auth
 {
-    public interface IAuthData
+    public interface IRoleService
     {
         Task<Role> AddRoleAsync(Role role);
-
-        Task<User> AddUserAsync(User user);
-
-        Task<User> AddUserToRoleAsync(string user, string role);
 
         Task<IEnumerable<Role>> GetRolesAsync();
 
         Task<IEnumerable<Role>> GetRolesAsync(User user);
 
         Task<Role> GeRoleByNameAsync(string name);
-
-        Task<User> GetUserByIdAsync(string id);
-
-        Task<IEnumerable<User>> GetUsersAsync();
     }
 }

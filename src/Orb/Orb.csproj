@@ -145,6 +145,7 @@
     <Compile Include="CompanyInputType.cs" />
     <Compile Include="CompanyMutation.cs" />
     <Compile Include="CompanyQuery.cs" />
+    <Compile Include="CompanyService.cs" />
     <Compile Include="CompanyType.cs" />
     <Compile Include="Dimension.cs" />
     <Compile Include="DimensionEntityTypeConfiguration.cs" />
@@ -157,12 +158,14 @@
     <Compile Include="FamilyInputType.cs" />
     <Compile Include="FamilyMutation.cs" />
     <Compile Include="FamilyQuery.cs" />
+    <Compile Include="FamilyService.cs" />
     <Compile Include="FamilyType.cs" />
     <Compile Include="Feed.cs" />
     <Compile Include="FeedEntityTypeConfiguration.cs" />
     <Compile Include="FeedInputType.cs" />
     <Compile Include="FeedMutation.cs" />
     <Compile Include="FeedQuery.cs" />
+    <Compile Include="FeedService.cs" />
     <Compile Include="FeedType.cs" />
     <Compile Include="FeedTypes.cs" />
     <Compile Include="Individual.cs" />
@@ -170,6 +173,7 @@
     <Compile Include="IndividualInputType.cs" />
     <Compile Include="IndividualMutation.cs" />
     <Compile Include="IndividualQuery.cs" />
+    <Compile Include="IndividualService.cs" />
     <Compile Include="IndividualType.cs" />
     <Compile Include="JsonSchema.cs" />
     <Compile Include="Market.cs" />
@@ -177,19 +181,21 @@
     <Compile Include="MarketInputType.cs" />
     <Compile Include="MarketMutation.cs" />
     <Compile Include="MarketQuery.cs" />
+    <Compile Include="MarketService.cs" />
     <Compile Include="MarketType.cs" />
     <Compile Include="MarketTypes.cs" />
-    <Compile Include="Measure.cs" />
     <Compile Include="Member.cs" />
     <Compile Include="MemberEntityTypeConfiguration.cs" />
     <Compile Include="MemberInputType.cs" />
     <Compile Include="MemberMutation.cs" />
     <Compile Include="MemberQuery.cs" />
+    <Compile Include="MemberService.cs" />
     <Compile Include="Membership.cs" />
     <Compile Include="MembershipEntityTypeConfiguration.cs" />
     <Compile Include="MembershipInputType.cs" />
     <Compile Include="MembershipMutation.cs" />
     <Compile Include="MembershipQuery.cs" />
+    <Compile Include="MembershipService.cs" />
     <Compile Include="MembershiptInputType.cs" />
     <Compile Include="MembershipType.cs" />
     <Compile Include="MemberType.cs" />
@@ -200,8 +206,9 @@
     <Compile Include="NetworkInputType.cs" />
     <Compile Include="NetworkMutation.cs" />
     <Compile Include="NetworkQuery.cs" />
+    <Compile Include="NetworkService.cs" />
     <Compile Include="NetworkType.cs" />
-    <Compile Include="OrbData.cs" />
+    <Compile Include="OrbDbContext.cs" />
     <Compile Include="OrbMutation.cs" />
     <Compile Include="OrbQuery.cs" />
     <Compile Include="OrbSchema.cs" />
@@ -210,6 +217,7 @@
     <Compile Include="OrganizationInputType.cs" />
     <Compile Include="OrganizationMutation.cs" />
     <Compile Include="OrganizationQuery.cs" />
+    <Compile Include="OrganizationService.cs" />
     <Compile Include="OrganizationType.cs" />
     <Compile Include="OrganizationTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -218,6 +226,7 @@
     <Compile Include="RegionInputType.cs" />
     <Compile Include="RegionMutation.cs" />
     <Compile Include="RegionQuery.cs" />
+    <Compile Include="RegionService.cs" />
     <Compile Include="RegionType.cs" />
   </ItemGroup>
   <ItemGroup>

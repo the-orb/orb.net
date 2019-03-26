@@ -3,35 +3,21 @@ using Auth0.ManagementApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Auth
 {
-    public class Auth0Data : IAuthData
+    public class Auth0UserService : IUserService
     {
         readonly ManagementApiClient _client;
 
-        public Auth0Data()
+        public Auth0UserService(ManagementApiClient client)
         {
-            _client = new ManagementApiClient("your token", new Uri("https://YOUR_AUTH0_DOMAIN/api/v2"));
+            _client = client;
         }
 
-        Task<Role> IAuthData.GeRoleByNameAsync(string name)
-        {
-            throw new NotImplementedException();
-        }
-
-        Task<IEnumerable<Role>> IAuthData.GetRolesAsync(User user)
-        {
-            throw new NotImplementedException();
-        }
-
-        Task<IEnumerable<Role>> IAuthData.GetRolesAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        async Task<IEnumerable<User>> IAuthData.GetUsersAsync()
+        public async Task<IEnumerable<User>> GetUsersAsync()
         {
             var req = new GetUsersRequest
             {
@@ -54,22 +40,17 @@ namespace Auth
             });
         }
 
-        Task<User> IAuthData.GetUserByIdAsync(string id)
+        public Task<User> GetUserByIdAsync(string id)
         {
             throw new NotImplementedException();
         }
 
-        Task<Role> IAuthData.AddRoleAsync(Role role)
+        public Task<User> AddUserAsync(User user)
         {
             throw new NotImplementedException();
         }
 
-        Task<User> IAuthData.AddUserAsync(User user)
-        {
-            throw new NotImplementedException();
-        }
-
-        Task<User> IAuthData.AddUserToRoleAsync(string user, string role)
+        public Task<User> AddUserToRoleAsync(string user, string role)
         {
             throw new NotImplementedException();
         }

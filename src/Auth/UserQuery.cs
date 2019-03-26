@@ -5,11 +5,11 @@ namespace Auth
 {
     class UserQuery : ObjectGraphType
     {
-        public UserQuery(IAuthData data)
+        public UserQuery(IUserService service)
         {
             Name = "UserQuery";
 
-            Func<ResolveFieldContext, string, object> func = (context, id) => data.GetUserByIdAsync(id);
+            Func<ResolveFieldContext, string, object> func = (context, id) => service.GetUserByIdAsync(id);
 
             FieldDelegate<UserType>(
                 "user",

@@ -4,7 +4,7 @@ namespace Auth
 {
     class UserMutation : ObjectGraphType
     {
-        public UserMutation(IAuthData data)
+        public UserMutation(IUserService service)
         {
             Name = "UserMutation";
 
@@ -16,7 +16,7 @@ namespace Auth
                 resolve: context =>
                 {
                     var user = context.GetArgument<User>("user");
-                    return data.AddUserAsync(user);
+                    return service.AddUserAsync(user);
                 });
 
             Field<UserType>(
@@ -29,7 +29,7 @@ namespace Auth
                 {
                     var role = context.GetArgument<string>("role");
                     var user = context.GetArgument<string>("user");
-                    return data.AddUserToRoleAsync(user: user, role: role);
+                    return service.AddUserToRoleAsync(user: user, role: role);
                 });
         }
     }
