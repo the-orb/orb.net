@@ -2,10 +2,10 @@
 
 namespace Orb
 {
-    public class Organization : Entity
+    class OrganizationEntity : Entity
     {
         public override byte Level { get; internal set; } = (byte)EntityTypes.Individual - 1;
 
-        public virtual ICollection<Member> Members { get; set; }
+        public virtual ICollection<MemberEntity> Members { get; set; }
     }
 }

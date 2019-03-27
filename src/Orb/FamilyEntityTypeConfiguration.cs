@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    public class FamilyEntityTypeConfiguration : EntityTypeConfiguration<Family>
+    class FamilyEntityTypeConfiguration : EntityTypeConfiguration<FamilyEntity>
     {
         public FamilyEntityTypeConfiguration()
         {

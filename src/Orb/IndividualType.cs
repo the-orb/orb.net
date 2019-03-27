@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class IndividualType : ObjectGraphType<Individual>
+    class IndividualType : ObjectGraphType<IndividualEntity>
     {
     }
 }

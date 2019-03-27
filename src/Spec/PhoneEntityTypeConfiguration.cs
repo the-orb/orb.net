@@ -1,4 +1,5 @@
-﻿using System.Data.Entity.ModelConfiguration;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity.ModelConfiguration;
 
 namespace Spec
 {
@@ -6,6 +7,11 @@ namespace Spec
     {
         public PhoneEntityTypeConfiguration()
         {
+            ToTable("Phones");
+
+            HasKey(x => x.Number);
+
+            Property(x => x.UId).HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
         }
     }
 }

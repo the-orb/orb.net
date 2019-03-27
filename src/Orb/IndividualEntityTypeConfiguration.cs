@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class IndividualEntityTypeConfiguration : EntityTypeConfiguration<Individual>
+    class IndividualEntityTypeConfiguration : EntityTypeConfiguration<IndividualEntity>
     {
         public IndividualEntityTypeConfiguration()
         {

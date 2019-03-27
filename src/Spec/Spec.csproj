@@ -58,12 +58,17 @@
     <Compile Include="IEmailDbContext.cs" />
     <Compile Include="ILocalDbContext.cs" />
     <Compile Include="INameDbContext.cs" />
+    <Compile Include="IPasswordDbContext.cs" />
+    <Compile Include="IPhoneDbContext.cs" />
     <Compile Include="Local.cs" />
     <Compile Include="LocalEntityTypeConfiguration.cs" />
     <Compile Include="LocalService.cs" />
     <Compile Include="Name.cs" />
     <Compile Include="NameEntityTypeConfiguration.cs" />
     <Compile Include="NameService.cs" />
+    <Compile Include="Password.cs" />
+    <Compile Include="PasswordEntityTypeConfiguration.cs" />
+    <Compile Include="PasswordService.cs" />
     <Compile Include="Phone.cs" />
     <Compile Include="PhoneEntityTypeConfiguration.cs" />
     <Compile Include="PhoneService.cs" />

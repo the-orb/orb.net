@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class NetworkInputType : InputObjectGraphType<Network>
+    class NetworkInputType : InputObjectGraphType<NetworkEntity>
     {
     }
 }

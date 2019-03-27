@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class RegionType : ObjectGraphType<Region>
+    class RegionType : ObjectGraphType<RegionEntity>
     {
     }
 }

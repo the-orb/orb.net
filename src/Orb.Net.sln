@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intel", "Intel\Intel.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meta", "Meta\Meta.csproj", "{D9719DF8-9006-4271-9D30-CC246A48AE8F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spec", "Spec\Spec.csproj", "{7D273DD7-C0D6-4B90-AB49-0AC4559F2ED9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{D9719DF8-9006-4271-9D30-CC246A48AE8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9719DF8-9006-4271-9D30-CC246A48AE8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9719DF8-9006-4271-9D30-CC246A48AE8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D273DD7-C0D6-4B90-AB49-0AC4559F2ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D273DD7-C0D6-4B90-AB49-0AC4559F2ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D273DD7-C0D6-4B90-AB49-0AC4559F2ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D273DD7-C0D6-4B90-AB49-0AC4559F2ED9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

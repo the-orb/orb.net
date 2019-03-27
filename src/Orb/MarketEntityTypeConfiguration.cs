@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class MarketEntityTypeConfiguration : EntityTypeConfiguration<Market>
+    class MarketEntityTypeConfiguration : EntityTypeConfiguration<MarketEntity>
     {
         public MarketEntityTypeConfiguration()
         {

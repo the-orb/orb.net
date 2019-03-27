@@ -13,17 +13,17 @@ namespace Orb
                 ContractResolver = new CamelCasePropertyNamesContractResolver()
             };
 
-            Company = generator.Generate(typeof(Company));
+            Company = generator.Generate(typeof(CompanyEntity));
             Dimension = generator.Generate(typeof(Dimension));
-            Family = generator.Generate(typeof(Family));
-            Feed = generator.Generate(typeof(Feed));
-            Individual = generator.Generate(typeof(Individual));
-            Market = generator.Generate(typeof(Market));
+            Family = generator.Generate(typeof(FamilyEntity));
+            Feed = generator.Generate(typeof(FeedEntity));
+            Individual = generator.Generate(typeof(IndividualEntity));
+            Market = generator.Generate(typeof(MarketEntity));
             Member = generator.Generate(typeof(Entity));
-            Membership = generator.Generate(typeof(Member));
-            Network = generator.Generate(typeof(Network));
-            Organization = generator.Generate(typeof(Organization));
-            Region = generator.Generate(typeof(Region));
+            Membership = generator.Generate(typeof(MemberEntity));
+            Network = generator.Generate(typeof(NetworkEntity));
+            Organization = generator.Generate(typeof(OrganizationEntity));
+            Region = generator.Generate(typeof(RegionEntity));
         }
 
         public static JSchema Company { get; }

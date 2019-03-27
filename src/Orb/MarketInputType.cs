@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class MarketInputType : InputObjectGraphType<Market>
+    class MarketInputType : InputObjectGraphType<MarketEntity>
     {
     }
 }

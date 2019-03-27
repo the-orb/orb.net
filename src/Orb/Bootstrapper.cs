@@ -10,25 +10,25 @@
             container.Register<OrbQuery>();
             container.Register<OrbSchema>();
 
-            container.Register<Company>();
+            container.Register<CompanyEntity>();
             container.Register<CompanyInputType>();
             container.Register<CompanyMutation>();
             container.Register<CompanyQuery>();
             container.Register<CompanyType>();
 
-            container.Register<Family>();
+            container.Register<FamilyEntity>();
             container.Register<FamilyInputType>();
             container.Register<FamilyMutation>();
             container.Register<FamilyQuery>();
             container.Register<FamilyType>();
 
-            container.Register<Individual>();
+            container.Register<IndividualEntity>();
             container.Register<IndividualInputType>();
             container.Register<IndividualMutation>();
             container.Register<IndividualQuery>();
             container.Register<IndividualType>();
 
-            container.Register<Market>();
+            container.Register<MarketEntity>();
             container.Register<MarketInputType>();
             container.Register<MarketMutation>();
             container.Register<MarketQuery>();
@@ -40,25 +40,25 @@
             container.Register<EntityQuery>();
             container.Register<EntityType>();
 
-            container.Register<Member>();
+            container.Register<MemberEntity>();
             container.Register<MemberInputType>();
             container.Register<MemberMutation>();
             container.Register<MemberQuery>();
             container.Register<MemberType>();
 
-            container.Register<Network>();
+            container.Register<NetworkEntity>();
             container.Register<NetworkInputType>();
             container.Register<NetworkMutation>();
             container.Register<NetworkQuery>();
             container.Register<NetworkType>();
 
-            container.Register<Organization>();
+            container.Register<OrganizationEntity>();
             container.Register<OrganizationInputType>();
             container.Register<OrganizationMutation>();
             container.Register<OrganizationQuery>();
             container.Register<OrganizationType>();
 
-            container.Register<Region>();
+            container.Register<RegionEntity>();
             container.Register<RegionInputType>();
             container.Register<RegionMutation>();
             container.Register<RegionQuery>();

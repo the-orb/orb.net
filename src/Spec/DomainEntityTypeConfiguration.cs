@@ -1,4 +1,5 @@
-﻿using System.Data.Entity.ModelConfiguration;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity.ModelConfiguration;
 
 namespace Spec
 {
@@ -6,7 +7,13 @@ namespace Spec
     {
         public DomainEntityTypeConfiguration()
         {
+            ToTable("Domain");
 
+            HasKey(x => x.Md5);
+
+            Property(x => x.UId).HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
+
+            Property(x => x.Value).HasMaxLength(Domain.MAX_LENGTH).IsRequired().IsUnicode(false);
         }
     }
 }

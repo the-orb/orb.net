@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class MemberType : ObjectGraphType<Member>
+    class MemberType : ObjectGraphType<MemberEntity>
     {
     }
 }

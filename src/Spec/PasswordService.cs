@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace Spec
 {
-    public class Phone
+    internal class PasswordService
     {
-        public Boolean Block { get; set; }
-
-        public long Number { get; set; }
-
-        public Guid? UId { get; set; }
+        public PasswordService(IPasswordDbContext context)
+        {
+        }
     }
 }

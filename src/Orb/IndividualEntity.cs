@@ -1,6 +1,6 @@
 ﻿namespace Orb
 {
-    public class Individual : Entity
+    class IndividualEntity : Entity
     {
         public const byte LEVEL = (byte)EntityTypes.Individual;
 
@@ -10,6 +10,6 @@
 
         public string Surname { get; set; }
 
-        protected override string Type { get; set; } = nameof(Individual);
+        protected override string Type { get; set; } = nameof(IndividualEntity);
     }
 }

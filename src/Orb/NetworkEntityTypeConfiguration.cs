@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class NetworkEntityTypeConfiguration : EntityTypeConfiguration<Network>
+    class NetworkEntityTypeConfiguration : EntityTypeConfiguration<NetworkEntity>
     {
         public NetworkEntityTypeConfiguration()
         {

@@ -8,6 +8,8 @@ namespace Spec
 {
     public class Email
     {
+        public Boolean Block { get; set; }
+
         public Domain Domain { get; set; }
 
         public Guid DomainMd5 { get; set; }

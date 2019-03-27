@@ -5,13 +5,13 @@ namespace Orb
 {
     public class Entity
     {
-        public virtual ICollection<Feed> Feeds { get; set; }
+        public virtual ICollection<FeedEntity> Feeds { get; set; }
 
         public Guid Id { get; set; } = Guid.NewGuid();
 
         public virtual byte Level { get; internal set; } = (byte)EntityTypes.Individual;
 
-        public virtual ICollection<Member> Memberships { get; set; }
+        public virtual ICollection<MemberEntity> Memberships { get; set; }
 
         public Guid Name { get; set; }
 

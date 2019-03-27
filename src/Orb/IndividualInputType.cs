@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class IndividualInputType : InputObjectGraphType<Individual>
+    class IndividualInputType : InputObjectGraphType<IndividualEntity>
     {
     }
 }

@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class OrganizationInputType : InputObjectGraphType<Organization>
+    class OrganizationInputType : InputObjectGraphType<OrganizationEntity>
     {
     }
 }

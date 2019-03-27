@@ -1,6 +1,6 @@
 ﻿namespace Orb
 {
-    public class Family : Organization
+    class FamilyEntity : OrganizationEntity
     {
         public const byte LEVEL = (byte)EntityTypes.Family;
 
@@ -8,6 +8,6 @@
 
         public override byte Level => LEVEL;
 
-        protected override string Type { get; set; } = nameof(Family);
+        protected override string Type { get; set; } = nameof(FamilyEntity);
     }
 }

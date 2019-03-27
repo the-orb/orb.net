@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class RegionEntityTypeConfiguration : EntityTypeConfiguration<Region>
+    class RegionEntityTypeConfiguration : EntityTypeConfiguration<RegionEntity>
     {
         public RegionEntityTypeConfiguration()
         {

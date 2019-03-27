@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class RegionInputType : InputObjectGraphType<Region>
+    class RegionInputType : InputObjectGraphType<RegionEntity>
     {
     }
 }

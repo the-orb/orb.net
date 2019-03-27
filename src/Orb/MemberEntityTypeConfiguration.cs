@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class MemberEntityTypeConfiguration : EntityTypeConfiguration<Member>
+    class MemberEntityTypeConfiguration : EntityTypeConfiguration<MemberEntity>
     {
         public MemberEntityTypeConfiguration()
         {

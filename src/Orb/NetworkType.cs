@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class NetworkType : ObjectGraphType<Network>
+    class NetworkType : ObjectGraphType<NetworkEntity>
     {
     }
 }

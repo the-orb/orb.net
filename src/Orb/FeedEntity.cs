@@ -7,7 +7,7 @@ namespace Orb
     /// It is commonly used by real-time applications in point-to-point settings as well
     /// as on the World Wide Web. The latter is also called web feed.
     /// </summary>
-    public class Feed
+    class FeedEntity
     {
         public virtual IList<Dimension> Dimensions { get; set; }
 

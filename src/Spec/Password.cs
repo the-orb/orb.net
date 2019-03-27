@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace Spec
 {
-    public class Name
+    public class Password
     {
-        public const byte MAX_LENGTH = 64;
-
         public Boolean Block { get; set; }
 
         public Guid Md5 { get; set; }
 
-        public string Value { get; set; }
+        public Guid UId { get; set; }
     }
 }

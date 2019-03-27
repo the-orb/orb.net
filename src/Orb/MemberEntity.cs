@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Orb
 {
-    public class Member
+    public class MemberEntity
     {
         public virtual Entity Entity { get; set; }
 
@@ -14,7 +14,7 @@ namespace Orb
 
         public EntityTypes EntityType { get; set; }
 
-        public virtual Organization Organization { get; set; }
+        public virtual OrganizationEntity Organization { get; set; }
 
         public Guid OrganizationUId { get; set; }
 

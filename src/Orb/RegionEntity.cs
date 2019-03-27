@@ -1,6 +1,6 @@
 ﻿namespace Orb
 {
-    public class Region : Organization
+    class RegionEntity : OrganizationEntity
     {
         public bool IsCountry { get; set; }
 
@@ -8,6 +8,6 @@
 
         public override byte Level => LEVEL;
 
-        protected override string Type { get; set; } = nameof(Region);
+        protected override string Type { get; set; } = nameof(RegionEntity);
     }
 }

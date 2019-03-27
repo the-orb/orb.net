@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class FeedType : ObjectGraphType<Feed>
+    class FeedType : ObjectGraphType<FeedEntity>
     {
     }
 }

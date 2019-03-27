@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class FamilyInputType : InputObjectGraphType<Family>
+    class FamilyInputType : InputObjectGraphType<FamilyEntity>
     {
     }
 }

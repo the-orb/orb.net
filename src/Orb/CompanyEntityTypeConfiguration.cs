@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class CompanyEntityTypeConfiguration : EntityTypeConfiguration<Company>
+    class CompanyEntityTypeConfiguration : EntityTypeConfiguration<CompanyEntity>
     {
         public CompanyEntityTypeConfiguration()
         {
