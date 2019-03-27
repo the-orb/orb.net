@@ -163,7 +163,7 @@
     <Compile Include="DimensionType.cs" />
     <Compile Include="Family.cs" />
     <Compile Include="FamilyEntity.cs" />
-    <Compile Include="FamilyApiController.cs" />
+    <Compile Include="FamiliesApiController.cs" />
     <Compile Include="FamilyEntityTypeConfiguration.cs" />
     <Compile Include="FamilyInputType.cs" />
     <Compile Include="FamilyMutation.cs" />
@@ -172,7 +172,7 @@
     <Compile Include="FamilyType.cs" />
     <Compile Include="Feed.cs" />
     <Compile Include="FeedEntity.cs" />
-    <Compile Include="FeedApiController.cs" />
+    <Compile Include="FeedsApiController.cs" />
     <Compile Include="FeedEntityTypeConfiguration.cs" />
     <Compile Include="FeedInputType.cs" />
     <Compile Include="FeedMutation.cs" />
@@ -181,6 +181,7 @@
     <Compile Include="FeedType.cs" />
     <Compile Include="FeedTypes.cs" />
     <Compile Include="Individual.cs" />
+    <Compile Include="IndividualsApiController.cs" />
     <Compile Include="IndividualEntity.cs" />
     <Compile Include="IndividualEntityTypeConfiguration.cs" />
     <Compile Include="IndividualInputType.cs" />
@@ -192,7 +193,7 @@
     <Compile Include="JsonSchema.cs" />
     <Compile Include="Market.cs" />
     <Compile Include="MarketEntity.cs" />
-    <Compile Include="MarketApiController.cs" />
+    <Compile Include="MarketsApiController.cs" />
     <Compile Include="MarketEntityTypeConfiguration.cs" />
     <Compile Include="MarketInputType.cs" />
     <Compile Include="MarketMutation.cs" />
@@ -218,7 +219,7 @@
     <Compile Include="EntityTypes.cs" />
     <Compile Include="Network.cs" />
     <Compile Include="NetworkEntity.cs" />
-    <Compile Include="NetworkApiController.cs" />
+    <Compile Include="NetworksApiController.cs" />
     <Compile Include="NetworkEntityTypeConfiguration.cs" />
     <Compile Include="IOrbData.cs" />
     <Compile Include="NetworkInputType.cs" />
@@ -243,7 +244,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Region.cs" />
     <Compile Include="RegionEntity.cs" />
-    <Compile Include="RegionApiController.cs" />
+    <Compile Include="RegionsApiController.cs" />
     <Compile Include="RegionEntityTypeConfiguration.cs" />
     <Compile Include="RegionInputType.cs" />
     <Compile Include="RegionMutation.cs" />

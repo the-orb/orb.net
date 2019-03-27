@@ -7,9 +7,9 @@ using System.Web.Http;
 
 namespace Orb
 {
-    public class NetworkApiController : ApiController
+    public class NetworksApiController : ApiController
     {
-        public NetworkApiController(NetworkService service)
+        public NetworksApiController(NetworkService service)
         {
         }
     }
