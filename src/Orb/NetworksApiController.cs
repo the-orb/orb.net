@@ -9,5 +9,8 @@ namespace Orb
 {
     public class NetworkApiController : ApiController
     {
+        public NetworkApiController(NetworkService service)
+        {
+        }
     }
 }

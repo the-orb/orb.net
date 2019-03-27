@@ -7,11 +7,12 @@ using System.Web.Http;
 
 namespace Orb
 {
-    public class CompaniesApiController : ApiController
+    [Route("api/individuals")]
+    public class IndividualsApiController
     {
-        readonly CompanyService _service;
+        readonly IndividualService _service;
 
-        public CompaniesApiController(CompanyService service)
+        public IndividualsApiController(IndividualService service)
         {
             _service = service;
         }
