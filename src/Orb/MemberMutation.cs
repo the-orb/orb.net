@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class MembershipMutation : ObjectGraphType
+    class MemberMutation : ObjectGraphType
     {
     }
 }

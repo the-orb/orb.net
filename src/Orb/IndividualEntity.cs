@@ -1,8 +1,8 @@
 ﻿namespace Orb
 {
-    public class Individual : Member
+    public class Individual : Entity
     {
-        public const byte LEVEL = (byte)MemberTypes.Individual;
+        public const byte LEVEL = (byte)EntityTypes.Individual;
 
         public string Forename { get; set; }
 

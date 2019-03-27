@@ -2,7 +2,7 @@
 {
     public class Market : Organization
     {
-        public const byte LEVEL = (byte)MemberTypes.Market;
+        public const byte LEVEL = (byte)EntityTypes.Market;
 
         public string Description { get; set; }
 

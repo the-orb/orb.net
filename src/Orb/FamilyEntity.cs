@@ -2,7 +2,7 @@
 {
     public class Family : Organization
     {
-        public const byte LEVEL = (byte)MemberTypes.Family;
+        public const byte LEVEL = (byte)EntityTypes.Family;
 
         public string Description { get; set; }
 

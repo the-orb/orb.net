@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class MembershipQuery : ObjectGraphType
+    class MemberQuery : ObjectGraphType
     {
     }
 }

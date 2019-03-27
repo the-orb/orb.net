@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class CompanyType : ObjectGraphType<Company>
+    class CompanyType : ObjectGraphType<CompanyEntity>
     {
     }
 }

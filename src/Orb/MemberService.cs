@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Orb
 {
-    public class MembershipService
+    public class MemberService
     {
         readonly OrbDbContext _context;
 
-        public MembershipService(OrbDbContext context)
+        public MemberService(OrbDbContext context)
         {
             _context = context;
         }

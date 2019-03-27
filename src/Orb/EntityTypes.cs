@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Orb
 {
-    public enum MemberTypes : byte
+    public enum EntityTypes : byte
     {
         Company = OrganizationTypes.Company,
 

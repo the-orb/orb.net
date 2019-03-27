@@ -1,13 +1,33 @@
 ﻿using System.Data.Entity;
+using System.Threading.Tasks;
 
 namespace Orb
 {
-    public class OrbDbContext : DbContext
+    public class OrbDbContext : DbContext,
+        Spec.IDomainDbContext,
+        Spec.IEmailDbContext,
+        Spec.ILocalDbContext,
+        Spec.INameDbContext,
+        Spec.IPhoneDbContext
     {
+        public DbSet<Spec.Domain> Domains => throw new System.NotImplementedException();
+
+        public DbSet<Spec.Email> Emails => throw new System.NotImplementedException();
+
+        public DbSet<Spec.Domain> Locals => throw new System.NotImplementedException();
+
+        public DbSet<Spec.Name> Names => throw new System.NotImplementedException();
+
+        public DbSet<Spec.Phone> Phones => throw new System.NotImplementedException();
+        
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
+            modelBuilder.Configurations.Add(new Spec.DomainEntityTypeConfiguration());
+            modelBuilder.Configurations.Add(new Spec.EmailEntityTypeConfiguration());
+            modelBuilder.Configurations.Add(new Spec.LocalEntityTypeConfiguration());
+            modelBuilder.Configurations.Add(new Spec.NameEntityTypeConfiguration());
             modelBuilder.Configurations.Add(new CompanyEntityTypeConfiguration());
             modelBuilder.Configurations.Add(new DimensionEntityTypeConfiguration());
             modelBuilder.Configurations.Add(new FamilyEntityTypeConfiguration());

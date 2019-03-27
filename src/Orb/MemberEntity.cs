@@ -8,15 +8,19 @@ namespace Orb
 {
     public class Member
     {
-        public byte MembershipType { get; set; } = 0;
+        public virtual Entity Entity { get; set; }
 
-        public Guid Member { get; set; }
+        public Guid EntityUId { get; set; }
 
-        public EntityTypes MemberType { get; set; }
+        public EntityTypes EntityType { get; set; }
 
-        public Guid Organization { get; set; }
+        public virtual Organization Organization { get; set; }
+
+        public Guid OrganizationUId { get; set; }
 
         public OrganizationTypes OrganizationType { get; set; }
+
+        public Guid Role { get; set; }
 
         public DateTimeOffset Since { get; set; } = DateTimeOffset.Now;
 

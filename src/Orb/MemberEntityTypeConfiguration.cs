@@ -2,15 +2,19 @@
 
 namespace Orb
 {
-    class MembershipEntityTypeConfiguration : EntityTypeConfiguration<Membership>
+    class MemberEntityTypeConfiguration : EntityTypeConfiguration<Member>
     {
-        public MembershipEntityTypeConfiguration()
+        public MemberEntityTypeConfiguration()
         {
-            ToTable("Memberships");
+            ToTable("Members");
 
-            HasKey(x => new { x.Member, x.Organization });
+            HasKey(x => new { x.Entity, x.Organization });
 
-            Property(x => x.MembershipType);
+            HasRequired(x => x.Entity).WithMany(x => x.Memberships).HasForeignKey(x => x.EntityUId);
+
+            HasRequired(x => x.Organization).WithMany(x => x.Members).HasForeignKey(x => x.OrganizationUId);
+
+            Property(x => x.Role);
 
             Property(x => x.Since);
 

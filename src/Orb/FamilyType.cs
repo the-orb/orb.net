@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    class FamilyType : ObjectGraphType<Family>
+    class FamilyType : ObjectGraphType<FamilyEntity>
     {
     }
 }

@@ -19,8 +19,8 @@ namespace Orb
             Feed = generator.Generate(typeof(Feed));
             Individual = generator.Generate(typeof(Individual));
             Market = generator.Generate(typeof(Market));
-            Member = generator.Generate(typeof(Member));
-            Membership = generator.Generate(typeof(Membership));
+            Member = generator.Generate(typeof(Entity));
+            Membership = generator.Generate(typeof(Member));
             Network = generator.Generate(typeof(Network));
             Organization = generator.Generate(typeof(Organization));
             Region = generator.Generate(typeof(Region));

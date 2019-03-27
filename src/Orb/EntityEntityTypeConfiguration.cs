@@ -2,11 +2,11 @@
 
 namespace Orb
 {
-    class MemberEntityTypeConfiguration : EntityTypeConfiguration<Member>
+    class EntityEntityTypeConfiguration : EntityTypeConfiguration<Entity>
     {
-        public MemberEntityTypeConfiguration()
+        public EntityEntityTypeConfiguration()
         {
-            ToTable("Members");
+            ToTable("Entities");
 
             HasKey(x => x.Id);
 

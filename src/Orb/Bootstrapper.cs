@@ -34,17 +34,17 @@
             container.Register<MarketQuery>();
             container.Register<MarketType>();
 
+            container.Register<Entity>();
+            container.Register<EntityInputType>();
+            container.Register<EntityMutation>();
+            container.Register<EntityQuery>();
+            container.Register<EntityType>();
+
             container.Register<Member>();
             container.Register<MemberInputType>();
             container.Register<MemberMutation>();
             container.Register<MemberQuery>();
             container.Register<MemberType>();
-
-            container.Register<Membership>();
-            container.Register<MembershipInputType>();
-            container.Register<MembershipMutation>();
-            container.Register<MembershipQuery>();
-            container.Register<MembershipType>();
 
             container.Register<Network>();
             container.Register<NetworkInputType>();

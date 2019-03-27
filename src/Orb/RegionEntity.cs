@@ -2,7 +2,9 @@
 {
     public class Region : Organization
     {
-        public const byte LEVEL = (byte)MemberTypes.Region;
+        public bool IsCountry { get; set; }
+
+        public const byte LEVEL = (byte)EntityTypes.Region;
 
         public override byte Level => LEVEL;
 

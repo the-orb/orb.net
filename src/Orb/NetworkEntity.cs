@@ -4,7 +4,7 @@ namespace Orb
 {
     public class Network : Organization
     {
-        public const byte LEVEL = (byte)MemberTypes.Network;
+        public const byte LEVEL = (byte)EntityTypes.Network;
 
         public string Description { get; set; }
 

@@ -2,7 +2,7 @@
 
 namespace Orb
 {
-    public class FeedEntityTypeConfiguration : EntityTypeConfiguration<Feed>
+    public class FeedEntityTypeConfiguration : EntityTypeConfiguration<FeedEntity>
     {
     }
 }

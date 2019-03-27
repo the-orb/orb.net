@@ -2,7 +2,7 @@
 {
     public class Company : Organization
     {
-        public const byte LEVEL = (byte)MemberTypes.Company;
+        public const byte LEVEL = (byte)EntityTypes.Company;
 
         public string Description { get; set; }
 
