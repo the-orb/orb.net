@@ -12,7 +12,7 @@ namespace Orb
 
         public Guid Member { get; set; }
 
-        public MemberTypes MemberType { get; set; }
+        public EntityTypes MemberType { get; set; }
 
         public Guid Organization { get; set; }
 

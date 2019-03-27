@@ -76,7 +76,7 @@ namespace Orb.Areas.HelpPage
         public string GetDocumentation(MemberInfo member)
         {
             string memberName = String.Format(CultureInfo.InvariantCulture, "{0}.{1}", GetTypeName(member.DeclaringType), member.Name);
-            string expression = member.MemberType == MemberTypes.Field ? FieldExpression : PropertyExpression;
+            string expression = member.MemberType == EntityTypes.Field ? FieldExpression : PropertyExpression;
             string selectExpression = String.Format(CultureInfo.InvariantCulture, expression, memberName);
             XPathNavigator propertyNode = _documentNavigator.SelectSingleNode(selectExpression);
             return GetTagValue(propertyNode, "summary");

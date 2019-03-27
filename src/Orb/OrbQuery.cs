@@ -7,7 +7,7 @@
             Extend(new FamilyQuery());
             Extend(new IndividualQuery());
             Extend(new MarketQuery());
-            Extend(new MemberQuery());
+            Extend(new EntityQuery());
             Extend(new MembershipQuery());
             Extend(new OrganizationQuery());
             Extend(new RegionQuery());
