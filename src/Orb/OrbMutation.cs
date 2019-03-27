@@ -8,7 +8,7 @@
             Extend(new IndividualMutation());
             Extend(new MarketMutation());
             Extend(new EntityMutation());
-            Extend(new MembershipMutation());
+            Extend(new MemberMutation());
             Extend(new OrganizationMutation());
             Extend(new RegionMutation());
         }

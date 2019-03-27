@@ -15,7 +15,7 @@ namespace Orb
             modelBuilder.Configurations.Add(new IndividualEntityTypeConfiguration());
             modelBuilder.Configurations.Add(new MarketEntityTypeConfiguration());
             modelBuilder.Configurations.Add(new EntityEntityTypeConfiguration());
-            modelBuilder.Configurations.Add(new MembershipEntityTypeConfiguration());
+            modelBuilder.Configurations.Add(new MemberEntityTypeConfiguration());
             modelBuilder.Configurations.Add(new OrganizationEntityTypeConfiguration());
             modelBuilder.Configurations.Add(new RegionEntityTypeConfiguration());
         }

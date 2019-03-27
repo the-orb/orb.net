@@ -8,7 +8,7 @@
             Extend(new IndividualQuery());
             Extend(new MarketQuery());
             Extend(new EntityQuery());
-            Extend(new MembershipQuery());
+            Extend(new MemberQuery());
             Extend(new OrganizationQuery());
             Extend(new RegionQuery());
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Orb
 {
-    public class Membership
+    public class Member
     {
         public byte MembershipType { get; set; } = 0;
 
