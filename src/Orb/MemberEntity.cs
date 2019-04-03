@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Orb
 {
-    public class MemberEntity
+    class MemberEntity
     {
         public virtual Entity Entity { get; set; }
 
-        public Guid EntityUId { get; set; }
+        public Guid EntityId { get; set; }
 
         public EntityTypes EntityType { get; set; }
 
@@ -25,5 +21,9 @@ namespace Orb
         public DateTimeOffset Since { get; set; } = DateTimeOffset.Now;
 
         public DateTimeOffset? Until { get; set; }
+
+        public virtual Spec.UserEntity User { get; set; }
+
+        public Guid? UserId { get; set; }
     }
 }

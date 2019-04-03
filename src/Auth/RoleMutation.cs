@@ -8,10 +8,10 @@ namespace Auth
         {
             Name = "RoleMutation";
 
-            Field<UserType>(
+            Field<UserGraphType>(
                 "createRole",
                 arguments: new QueryArguments(
-                    new QueryArgument<NonNullGraphType<UserInputType>> { Name = "role" }
+                    new QueryArgument<NonNullGraphType<InputUserGraphType>> { Name = "role" }
                 ),
                 resolve: context =>
                 {

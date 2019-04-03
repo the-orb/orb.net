@@ -37,7 +37,7 @@ namespace Orb
             modelBuilder.Configurations.Add(new EntityEntityTypeConfiguration());
             modelBuilder.Configurations.Add(new MemberEntityTypeConfiguration());
             modelBuilder.Configurations.Add(new OrganizationEntityTypeConfiguration());
-            modelBuilder.Configurations.Add(new RegionEntityTypeConfiguration());
+            modelBuilder.Configurations.Add(new DivisionEntityTypeConfiguration());
         }
     }
 }

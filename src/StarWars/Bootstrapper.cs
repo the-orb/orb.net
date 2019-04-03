@@ -1,18 +1,22 @@
-﻿namespace StarWars
-{
+﻿using GraphQL;
+using Unity;
+
+namespace StarWars
+{   
     using Types;
 
-    public static class Bootstrapper
+    internal static class Bootstrapper
     {
-        public static void Setup(IoC.ISimpleContainer container)
+        public static void Setup(IUnityContainer container)
         {
-            container.Singleton(new StarWarsData());
-            container.Register<StarWarsQuery>();
-            container.Register<StarWarsMutation>();
-            container.Register<HumanType>();
-            container.Register<HumanInputType>();
-            container.Register<DroidType>();
-            container.Register<CharacterInterface>();
+            container.RegisterInstance(new StarWarsData());
+            container.RegisterType<StarWarsQuery>();
+            container.RegisterType<StarWarsMutation>();
+            container.RegisterType<HumanType>();
+            container.RegisterType<HumanInputType>();
+            container.RegisterType<DroidType>();
+            container.RegisterType<CharacterInterface>();
+            container.RegisterInstance(new StarWarsSchema(new FuncDependencyResolver(type => container.Resolve(type))));
         }
     }
 }

@@ -7,7 +7,7 @@ namespace Spec
     {
         public EmailEntityTypeConfiguration()
         {
-            ToTable("Names");
+            ToTable("emails");
 
             HasRequired(x => x.Domain).WithMany().HasForeignKey(x => x.DomainMd5);
 

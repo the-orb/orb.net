@@ -4,13 +4,13 @@
     {
         public OrbMutation()
         {
+            Extend(new BrandMutation());
             Extend(new FamilyMutation());
             Extend(new IndividualMutation());
             Extend(new MarketMutation());
-            Extend(new EntityMutation());
             Extend(new MemberMutation());
             Extend(new OrganizationMutation());
-            Extend(new RegionMutation());
+            Extend(new DivisionMutation());
         }
     }
 }

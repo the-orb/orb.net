@@ -48,10 +48,37 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GraphQL, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GraphQL.2.4.0\lib\net45\GraphQL.dll</HintPath>
+    </Reference>
+    <Reference Include="GraphQL-Parser, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GraphQL-Parser.3.0.0\lib\net45\GraphQL-Parser.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Reactive.Core, Version=3.0.3000.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reactive.Core.3.1.1\lib\net46\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces, Version=3.0.1000.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reactive.Interfaces.3.1.1\lib\net45\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq, Version=3.0.3000.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reactive.Linq.3.1.1\lib\net46\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -67,9 +94,6 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
     </Reference>
@@ -110,6 +134,12 @@
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Abstractions, Version=4.1.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.10.2\lib\net47\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.10.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.10.2\lib\net47\Unity.Container.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
@@ -210,17 +240,21 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OrbGraphQLController.cs" />
+    <Compile Include="Controllers\StarWarsGraphQLController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\GraphQLQuery.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="UnityResolver.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -256,7 +290,32 @@
     <None Include=".dockerignore">
       <DependentUpon>Dockerfile</DependentUpon>
     </None>
+    <Content Include="Scripts\graphiql\asset-manifest.json" />
+    <Content Include="Scripts\graphiql\manifest.json" />
+    <Content Include="Scripts\graphiql\static\css\2.3aaf9c0b.chunk.css.map" />
+    <Content Include="Scripts\graphiql\static\css\main.9e918a16.chunk.css.map" />
+    <Content Include="Scripts\graphiql\static\js\2.75160031.chunk.js.map" />
+    <Content Include="Scripts\graphiql\static\js\main.52f9687d.chunk.js.map" />
+    <Content Include="Scripts\graphiql\static\js\runtime~main.c5541365.js.map" />
+    <Content Include="Scripts\graphiql\static\media\autocompleteUtils.js.4ce7ba19.flow" />
+    <Content Include="Scripts\graphiql\static\media\getAutocompleteSuggestions.js.7f98f032.flow" />
+    <Content Include="Scripts\graphiql\static\media\getDefinition.js.4dbec62f.flow" />
+    <Content Include="Scripts\graphiql\static\media\getDiagnostics.js.65b0979a.flow" />
+    <Content Include="Scripts\graphiql\static\media\getHoverInformation.js.d9411837.flow" />
+    <Content Include="Scripts\graphiql\static\media\getOutline.js.c04e3998.flow" />
+    <Content Include="Scripts\graphiql\static\media\GraphQLLanguageService.js.5ab204b9.flow" />
+    <Content Include="Scripts\graphiql\static\media\index.js.02c24280.flow" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\graphiql\favicon.ico" />
+    <Content Include="Scripts\graphiql\index.html" />
+    <Content Include="Scripts\graphiql\precache-manifest.9b194c2f20b20425be3ed6c33286df7a.js" />
+    <Content Include="Scripts\graphiql\service-worker.js" />
+    <Content Include="Scripts\graphiql\static\css\2.3aaf9c0b.chunk.css" />
+    <Content Include="Scripts\graphiql\static\css\main.9e918a16.chunk.css" />
+    <Content Include="Scripts\graphiql\static\js\2.75160031.chunk.js" />
+    <Content Include="Scripts\graphiql\static\js\main.52f9687d.chunk.js" />
+    <Content Include="Scripts\graphiql\static\js\runtime~main.c5541365.js" />
+    <Content Include="Scripts\graphiql\static\media\logo.5d5d9eef.svg" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -281,6 +340,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\GraphiQL.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -313,6 +373,40 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Auth\Auth.csproj">
+      <Project>{fa996a4d-9b3d-4efe-814a-90d8c250a6cf}</Project>
+      <Name>Auth</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Life\Life.csproj">
+      <Project>{8ffbadb2-1358-4250-9922-806267ab4239}</Project>
+      <Name>Life</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Meta\Meta.csproj">
+      <Project>{d9719df8-9006-4271-9d30-cc246a48ae8f}</Project>
+      <Name>Meta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orb\Orb.csproj">
+      <Project>{84bcf1c0-dd7c-4e99-ae53-45128a9e996d}</Project>
+      <Name>Orb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Server\Server.csproj">
+      <Project>{a22b511f-8ecb-45f4-b6de-f13192e5e863}</Project>
+      <Name>Server</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Signal\Signal.csproj">
+      <Project>{b6a81c0d-2af5-407a-8705-8dfffd345a73}</Project>
+      <Name>Signal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Spec\Spec.csproj">
+      <Project>{7d273dd7-c0d6-4b90-ab49-0ac4559f2ed9}</Project>
+      <Name>Spec</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StarWars\StarWars.csproj">
+      <Project>{c2d5b72e-d087-4572-8e94-7f06fd55c378}</Project>
+      <Name>StarWars</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

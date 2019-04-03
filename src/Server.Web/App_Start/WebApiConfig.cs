@@ -5,13 +5,17 @@ using System.Net.Http;
 using System.Web.Http;
 using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Serialization;
+using Unity;
+using Unity.Lifetime;
 
 namespace Server.Web
 {
     public static class WebApiConfig
     {
         public static void Register(HttpConfiguration config)
-        {
+        {   
+            config.DependencyResolver = new UnityResolver(Bootstrapper.Container);
+
             // Web API configuration and services
             // Configure Web API to use only bearer token authentication.
             config.SuppressDefaultHostAuthentication();

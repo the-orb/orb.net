@@ -14,5 +14,13 @@ namespace Server.Web.Controllers
 
             return View();
         }
+
+        [Route("graphiql")]
+        public ActionResult GraphiQL()
+        {
+            ViewBag.Title = "GraphiQL";
+
+            return View();
+        }
     }
 }

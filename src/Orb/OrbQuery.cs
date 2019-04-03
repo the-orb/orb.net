@@ -4,13 +4,13 @@
     {
         public OrbQuery()
         {
+            Extend(new BrandQuery());
             Extend(new FamilyQuery());
             Extend(new IndividualQuery());
             Extend(new MarketQuery());
-            Extend(new EntityQuery());
             Extend(new MemberQuery());
             Extend(new OrganizationQuery());
-            Extend(new RegionQuery());
+            Extend(new DivisionQuery());
         }
     }
 }

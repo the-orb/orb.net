@@ -3,7 +3,6 @@ using Auth0.ManagementApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Auth
@@ -51,6 +50,11 @@ namespace Auth
         }
 
         public Task<User> AddUserToRoleAsync(string user, string role)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Role>> GetRolesAsync(User user)
         {
             throw new NotImplementedException();
         }

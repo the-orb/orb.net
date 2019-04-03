@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Orb
 {
-    public class Entity
+    class Entity
     {
         public virtual ICollection<FeedEntity> Feeds { get; set; }
 

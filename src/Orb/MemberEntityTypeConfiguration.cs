@@ -10,7 +10,7 @@ namespace Orb
 
             HasKey(x => new { x.Entity, x.Organization });
 
-            HasRequired(x => x.Entity).WithMany(x => x.Memberships).HasForeignKey(x => x.EntityUId);
+            HasRequired(x => x.Entity).WithMany(x => x.Memberships).HasForeignKey(x => x.EntityId);
 
             HasRequired(x => x.Organization).WithMany(x => x.Members).HasForeignKey(x => x.OrganizationUId);
 

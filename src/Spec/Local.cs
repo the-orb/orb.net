@@ -10,11 +10,9 @@ namespace Spec
     {
         public const byte MAX_LENGTH = 64;
 
-        public Boolean Block { get; set; }
+        public bool Block { get; set; }
 
         public Guid Md5 { get; set; }
-
-        public Guid? UId { get; set; }
 
         public string Value { get; set; }
     }

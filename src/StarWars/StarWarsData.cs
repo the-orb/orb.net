@@ -43,6 +43,21 @@ namespace StarWars
             });
         }
 
+        public List<StarWarsCharacter> GetAll()
+        {
+            var characters = new List<StarWarsCharacter>();
+
+            _humans.Apply(characters.Add);
+            _droids.Apply(characters.Add);
+
+            return characters;
+        }
+
+        public Task<List<StarWarsCharacter>> GetAllAsync()
+        {
+            return Task.FromResult(GetAll());
+        }
+
         public IEnumerable<StarWarsCharacter> GetFriends(StarWarsCharacter character)
         {
             if (character == null)

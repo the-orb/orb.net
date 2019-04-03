@@ -1,68 +1,68 @@
-﻿namespace Orb
+﻿using Unity;
+
+namespace Orb
 {
     public static class Bootstrapper
     {
-        public static void Setup(IoC.ISimpleContainer container)
+        public static void Setup(IUnityContainer container)
         {
-            container.Register<IOrbData>();
+            container.RegisterType<OrbMutation>();
+            container.RegisterType<OrbQuery>();
+            container.RegisterType<OrbSchema>();
 
-            container.Register<OrbMutation>();
-            container.Register<OrbQuery>();
-            container.Register<OrbSchema>();
+            container.RegisterType<Brand>();
+            container.RegisterType<InputBrandGraphType>();
+            container.RegisterType<BrandMutation>();
+            container.RegisterType<BrandQuery>();
+            container.RegisterType<BrandGraphType>();
 
-            container.Register<CompanyEntity>();
-            container.Register<CompanyInputType>();
-            container.Register<CompanyMutation>();
-            container.Register<CompanyQuery>();
-            container.Register<CompanyType>();
+            container.RegisterType<Company>();
+            container.RegisterType<InputCompanyGraphType>();
+            container.RegisterType<CompanyMutation>();
+            container.RegisterType<CompanyQuery>();
+            container.RegisterType<CompanyGraphType>();
 
-            container.Register<FamilyEntity>();
-            container.Register<FamilyInputType>();
-            container.Register<FamilyMutation>();
-            container.Register<FamilyQuery>();
-            container.Register<FamilyType>();
+            container.RegisterType<Family>();
+            container.RegisterType<InputFamilyGraphType>();
+            container.RegisterType<FamilyMutation>();
+            container.RegisterType<FamilyQuery>();
+            container.RegisterType<FamilyGraphType>();
 
-            container.Register<IndividualEntity>();
-            container.Register<IndividualInputType>();
-            container.Register<IndividualMutation>();
-            container.Register<IndividualQuery>();
-            container.Register<IndividualType>();
+            container.RegisterType<Individual>();
+            container.RegisterType<IndividualInputType>();
+            container.RegisterType<IndividualMutation>();
+            container.RegisterType<IndividualQuery>();
+            container.RegisterType<IndividualType>();
 
-            container.Register<MarketEntity>();
-            container.Register<MarketInputType>();
-            container.Register<MarketMutation>();
-            container.Register<MarketQuery>();
-            container.Register<MarketType>();
+            container.RegisterType<Market>();
+            container.RegisterType<InputMarketGraphType>();
+            container.RegisterType<MarketMutation>();
+            container.RegisterType<MarketQuery>();
+            container.RegisterType<MarketGraphType>();
 
-            container.Register<Entity>();
-            container.Register<EntityInputType>();
-            container.Register<EntityMutation>();
-            container.Register<EntityQuery>();
-            container.Register<EntityType>();
+            container.RegisterType<Member>();
+            container.RegisterType<InputMemberGraphType>();
+            container.RegisterType<MemberMutation>();
+            container.RegisterType<MemberQuery>();
+            container.RegisterType<MemberGraphType>();
 
-            container.Register<MemberEntity>();
-            container.Register<MemberInputType>();
-            container.Register<MemberMutation>();
-            container.Register<MemberQuery>();
-            container.Register<MemberType>();
+            container.RegisterType<Network>();
+            container.RegisterType<InputNetworkGraphType>();
+            container.RegisterType<NetworkMutation>();
+            container.RegisterType<NetworkQuery>();
+            container.RegisterType<NetworkGraphType>();
 
-            container.Register<NetworkEntity>();
-            container.Register<NetworkInputType>();
-            container.Register<NetworkMutation>();
-            container.Register<NetworkQuery>();
-            container.Register<NetworkType>();
+            container.RegisterType<Organization>();
+            container.RegisterType<InputOrganizationGraphType>();
+            container.RegisterType<OrganizationMutation>();
+            container.RegisterType<OrganizationQuery>();
+            container.RegisterType<OrganizationGraphType>();
 
-            container.Register<OrganizationEntity>();
-            container.Register<OrganizationInputType>();
-            container.Register<OrganizationMutation>();
-            container.Register<OrganizationQuery>();
-            container.Register<OrganizationType>();
-
-            container.Register<RegionEntity>();
-            container.Register<RegionInputType>();
-            container.Register<RegionMutation>();
-            container.Register<RegionQuery>();
-            container.Register<RegionType>();
+            container.RegisterType<Division>();
+            container.RegisterType<InputRegionGraphType>();
+            container.RegisterType<DivisionMutation>();
+            container.RegisterType<DivisionQuery>();
+            container.RegisterType<DivisionGraphType>();
         }
     }
 }

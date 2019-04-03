@@ -1,34 +1,35 @@
 ﻿using Auth0.AuthenticationApi;
 using Auth0.ManagementApi;
 using System;
+using Unity;
 
 namespace Auth
 {
     internal static class Bootstrapper
     {
-        public static void Setup(IoC.ISimpleContainer container)
+        public static void Setup(IUnityContainer container)
         {
             var baseUri = new Uri("https://YOUR_AUTH0_DOMAIN/api/v2");
 
-            container.Singleton(new AuthenticationApiClient(baseUri));
-            container.Singleton(new ManagementApiClient("your token", baseUri));
-            container.Register<IAuthenticationService, Auth0AuthenticationService>();
-            container.Register<ILoginService, Auth0LoginService>();
-            container.Register<IRoleService, Auth0RoleService>();
-            container.Register<IUserService, Auth0UserService>();
-            container.Register<AuthMutation>();
-            container.Register<AuthQuery>();
-            container.Register<AuthSchema>();
-            container.Register<Role>();
-            container.Register<RoleInputType>();
-            container.Register<RoleMutation>();
-            container.Register<RoleQuery>();
-            container.Register<RoleType>();
-            container.Register<User>();
-            container.Register<UserInputType>();
-            container.Register<UserMutation>();
-            container.Register<UserQuery>();
-            container.Register<UserType>();
+            container.RegisterInstance(new AuthenticationApiClient(baseUri));
+            container.RegisterInstance(new ManagementApiClient("your token", baseUri));
+            container.RegisterType<IAuthenticationService, Auth0AuthenticationService>();
+            container.RegisterType<ILoginService, Auth0LoginService>();
+            container.RegisterType<IRoleService, Auth0RoleService>();
+            container.RegisterType<IUserService, Auth0UserService>();
+            container.RegisterType<AuthMutation>();
+            container.RegisterType<AuthQuery>();
+            container.RegisterType<AuthSchema>();
+            container.RegisterType<Role>();
+            container.RegisterType<InputRoleGraphType>();
+            container.RegisterType<RoleMutation>();
+            container.RegisterType<RoleQuery>();
+            container.RegisterType<RoleGraphType>();
+            container.RegisterType<User>();
+            container.RegisterType<InputUserGraphType>();
+            container.RegisterType<UserMutation>();
+            container.RegisterType<UserQuery>();
+            container.RegisterType<UserGraphType>();
         }
     }
 }

@@ -7,7 +7,7 @@ namespace Spec
     {
         public PhoneEntityTypeConfiguration()
         {
-            ToTable("Phones");
+            ToTable("phones");
 
             HasKey(x => x.Number);
 

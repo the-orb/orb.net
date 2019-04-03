@@ -8,10 +8,10 @@ namespace Auth
         {
             Name = "UserMutation";
 
-            Field<UserType>(
+            Field<UserGraphType>(
                 "createUser",
                 arguments: new QueryArguments(
-                    new QueryArgument<NonNullGraphType<UserInputType>> { Name = "user" }
+                    new QueryArgument<NonNullGraphType<InputUserGraphType>> { Name = "user" }
                 ),
                 resolve: context =>
                 {
@@ -19,7 +19,7 @@ namespace Auth
                     return service.AddUserAsync(user);
                 });
 
-            Field<UserType>(
+            Field<UserGraphType>(
                 "addUserToRole",
                 arguments: new QueryArguments(
                     new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "user" },

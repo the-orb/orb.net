@@ -12,7 +12,7 @@ namespace Spec
     {
         public PasswordEntityTypeConfiguration()
         {
-            ToTable("Passwords");
+            ToTable("passwords");
 
             HasKey(x => new { x.Md5, x.UId });
 

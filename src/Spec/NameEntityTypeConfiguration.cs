@@ -6,7 +6,7 @@ namespace Spec
     {
         public NameEntityTypeConfiguration()
         {
-            ToTable("Names");
+            ToTable("names");
 
             HasKey(x => x.Md5);
 

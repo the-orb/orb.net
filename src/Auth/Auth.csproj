@@ -31,14 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Auth0.AuthenticationApi, Version=5.11.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Auth0.AuthenticationApi.5.11.0\lib\net452\Auth0.AuthenticationApi.dll</HintPath>
+    <Reference Include="Auth0.AuthenticationApi, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Auth0.AuthenticationApi.6.0.0\lib\net452\Auth0.AuthenticationApi.dll</HintPath>
     </Reference>
-    <Reference Include="Auth0.Core, Version=5.11.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Auth0.Core.5.11.0\lib\net452\Auth0.Core.dll</HintPath>
+    <Reference Include="Auth0.Core, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Auth0.Core.6.0.0\lib\net452\Auth0.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Auth0.ManagementApi, Version=5.11.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Auth0.ManagementApi.5.11.0\lib\net452\Auth0.ManagementApi.dll</HintPath>
+    <Reference Include="Auth0.ManagementApi, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Auth0.ManagementApi.6.0.0\lib\net452\Auth0.ManagementApi.dll</HintPath>
     </Reference>
     <Reference Include="GraphQL, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\GraphQL.2.4.0\lib\net45\GraphQL.dll</HintPath>
@@ -48,6 +48,12 @@
     </Reference>
     <Reference Include="GraphQL.EntityFramework, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\GraphQL.EntityFramework.4.1.0\lib\netstandard2.0\GraphQL.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="GraphQL.Relay, Version=0.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GraphQL.Relay.0.5.0\lib\net45\GraphQL.Relay.dll</HintPath>
+    </Reference>
+    <Reference Include="HttpMultipartParser, Version=2.2.4.0, Culture=neutral, PublicKeyToken=6d293681fa6c7a03, processorArchitecture=MSIL">
+      <HintPath>..\packages\HttpMultipartParser.2.2.4\lib\net46\HttpMultipartParser.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.EntityFrameworkCore, Version=2.2.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.EntityFrameworkCore.2.2.3\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
@@ -109,6 +115,9 @@
     <Reference Include="Newtonsoft.Json.Schema, Version=3.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.Schema.3.0.10\lib\net45\Newtonsoft.Json.Schema.dll</HintPath>
     </Reference>
+    <Reference Include="Panic.StringUtils, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Panic.StringUtils.1.0.1\lib\net45\Panic.StringUtils.dll</HintPath>
+    </Reference>
     <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
       <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
     </Reference>
@@ -152,15 +161,13 @@
     <Reference Include="System.Reactive.Linq, Version=3.0.3000.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Reactive.Linq.3.1.1\lib\net46\System.Reactive.Linq.dll</HintPath>
     </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.1\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Threading.Tasks" />
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -168,6 +175,12 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="Unity.Abstractions, Version=4.1.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.10.2\lib\net47\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.10.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.10.2\lib\net47\Unity.Container.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AuthMutation.cs" />
@@ -180,37 +193,33 @@
     <Compile Include="IRoleService.cs" />
     <Compile Include="Auth0AuthenticationService.cs" />
     <Compile Include="Login.cs" />
-    <Compile Include="LoginInputType.cs" />
+    <Compile Include="InputLoginGraphType.cs" />
     <Compile Include="LoginMutation.cs" />
     <Compile Include="LoginQuery.cs" />
     <Compile Include="LoginSchema.cs" />
     <Compile Include="Auth0LoginService.cs" />
-    <Compile Include="LoginType.cs" />
+    <Compile Include="LoginGraphType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Role.cs" />
-    <Compile Include="RoleInputType.cs" />
+    <Compile Include="InputRoleGraphType.cs" />
     <Compile Include="RoleMutation.cs" />
     <Compile Include="RoleQuery.cs" />
     <Compile Include="RoleSchema.cs" />
     <Compile Include="Auth0RoleService.cs" />
-    <Compile Include="RoleType.cs" />
+    <Compile Include="RoleGraphType.cs" />
     <Compile Include="User.cs" />
-    <Compile Include="UserInputType.cs" />
+    <Compile Include="InputUserGraphType.cs" />
     <Compile Include="UserMutation.cs" />
     <Compile Include="UserQuery.cs" />
     <Compile Include="UserSchema.cs" />
     <Compile Include="Auth0UserService.cs" />
-    <Compile Include="UserType.cs" />
+    <Compile Include="UserGraphType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{d4542ca2-eb2f-4962-b4c9-a26de3ebbebe}</Project>
-      <Name>Model</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Relay\Relay.csproj">
       <Project>{1bf08a0a-9f4a-4371-be33-e1c10c53d7f7}</Project>
       <Name>Relay</Name>

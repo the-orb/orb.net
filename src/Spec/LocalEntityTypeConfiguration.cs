@@ -6,13 +6,16 @@ namespace Spec
     {
         public LocalEntityTypeConfiguration()
         {
-            ToTable("Locals");
+            ToTable("locals");
 
             HasKey(x => x.Md5);
 
-            Property(x => x.UId);
+            Property(x => x.Block);
 
-            Property(x => x.Value).HasMaxLength(Local.MAX_LENGTH).IsRequired().IsUnicode(false);
+            Property(x => x.Value)
+                .HasMaxLength(Local.MAX_LENGTH)
+                .IsRequired()
+                .IsUnicode(false);
         }
     }
 }

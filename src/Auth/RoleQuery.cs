@@ -8,7 +8,7 @@ namespace Auth
         {
             Name = "RoleQuery";
 
-            Field<RoleType>(
+            Field<RoleGraphType>(
                 "role",
                 arguments: new QueryArguments(
                     new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "mame", Description = "name of the role" }

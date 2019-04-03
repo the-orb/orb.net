@@ -8,6 +8,8 @@ namespace Auth
 {
     public interface IUserService
     {
+        Task<IEnumerable<Role>> GetRolesAsync(User user);
+
         Task<User> AddUserAsync(User user);
 
         Task<User> AddUserToRoleAsync(string user, string role);

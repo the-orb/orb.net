@@ -384,10 +384,6 @@
       <Project>{8ffbadb2-1358-4250-9922-806267ab4239}</Project>
       <Name>Life</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{d4542ca2-eb2f-4962-b4c9-a26de3ebbebe}</Project>
-      <Name>Model</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Orb\Orb.csproj">
       <Project>{84bcf1c0-dd7c-4e99-ae53-45128a9e996d}</Project>
       <Name>Orb</Name>
@@ -403,10 +399,6 @@
     <ProjectReference Include="..\StarWars\StarWars.csproj">
       <Project>{c2d5b72e-d087-4572-8e94-7f06fd55c378}</Project>
       <Name>StarWars</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Store\Store.csproj">
-      <Project>{158783e1-4cc6-4f38-8d22-e7104343fcdf}</Project>
-      <Name>Store</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

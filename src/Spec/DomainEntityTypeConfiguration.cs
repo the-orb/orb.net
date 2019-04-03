@@ -7,7 +7,7 @@ namespace Spec
     {
         public DomainEntityTypeConfiguration()
         {
-            ToTable("Domain");
+            ToTable("domain");
 
             HasKey(x => x.Md5);
 

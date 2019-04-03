@@ -23,7 +23,7 @@ namespace Orb
             Membership = generator.Generate(typeof(MemberEntity));
             Network = generator.Generate(typeof(NetworkEntity));
             Organization = generator.Generate(typeof(OrganizationEntity));
-            Region = generator.Generate(typeof(RegionEntity));
+            Region = generator.Generate(typeof(DivisionEntity));
         }
 
         public static JSchema Company { get; }

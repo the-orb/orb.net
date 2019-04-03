@@ -8,6 +8,8 @@ namespace Orb
 {
     public enum EntityTypes : byte
     {
+        Brand = Individual - 1,
+
         Company = OrganizationTypes.Company,
 
         Individual = 255,

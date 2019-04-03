@@ -11,7 +11,7 @@ namespace Auth
 
             Func<ResolveFieldContext, string, object> func = (context, id) => service.GetUserByIdAsync(id);
 
-            FieldDelegate<UserType>(
+            FieldDelegate<UserGraphType>(
                 "user",
                 arguments: new QueryArguments(
                     new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "id", Description = "id of the user" }
