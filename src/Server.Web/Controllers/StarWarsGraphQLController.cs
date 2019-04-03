@@ -47,7 +47,7 @@ namespace Server.Web.Controllers
         [HttpPost]
         public async Task<HttpResponseMessage> PostAsync(HttpRequestMessage request, GraphQLQuery query)
         {
-            var inputs = query.Variables.ToInputs();
+            var inputs = query?.Variables?.ToString()?.ToInputs();
             var queryToExecute = query.Query;
 
             if (!string.IsNullOrWhiteSpace(query.NamedQuery))
