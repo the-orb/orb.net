@@ -11,14 +11,72 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Web.Http;
+using System.Linq;
 
 namespace Server.Web.Controllers
 {
     using Models;
+    using Newtonsoft.Json.Linq;
 
     [Route("graphql/starwars")]
     public sealed class StarWarsGraphQLController : ApiController
     {
+        const string QUERY = @"
+        query Query1($vaderId: String!) {
+            all: characters(last: 2, before: ""3"") {
+                totalCount
+                edges
+                {
+                    node
+                    {
+                        id
+                        name
+                    }
+                    cursor
+                }
+                pageInfo {
+                    hasPreviousPage
+                    startCursor
+                    endCursor
+                    hasNextPage
+                }
+            }
+            luke: human(id: ""1"") {
+                ...HumanFragment
+            }
+            r2d2: hero {
+                ...CharacterFragment
+            }
+            vader: human(id: $vaderId) {
+                ...HumanFragment
+            }
+        }
+
+        fragment HumanFragment on Human {
+            name
+            friends {
+                name
+            }
+            appearsIn,
+            homePlanet
+        }
+
+        fragment CharacterFragment on Character {
+            name
+            __typename
+            friends {
+                name
+            }
+            appearsIn
+        }
+
+        mutation createHuman($human: HumanInput!) {
+            createHuman(human: $human) {
+                name
+                homePlanet
+            }
+        }";
+
         readonly ISchema _schema;
         readonly IDocumentExecuter _executer;
         readonly IDocumentWriter _writer;
@@ -32,22 +90,26 @@ namespace Server.Web.Controllers
             _executer = executer;
             _writer = writer;
             _schema = schema;
-
-            _namedQueries = new Dictionary<string, string>
-            {
-                ["a-query"] = @"query foo { hero { name } }"
-            };
         }
 
-        public Task<HttpResponseMessage> GetAsync(HttpRequestMessage request)
+        [Route("{oparationName}")]
+        public Task<HttpResponseMessage> GetAsync(HttpRequestMessage request, string operationName)
         {
-            return PostAsync(request, new GraphQLQuery { Query = "query foo { hero }", Variables = null });
+            var variables = new JObject();
+            foreach (var x in request.GetQueryNameValuePairs())
+                variables.Add(x.Key, x.Value);
+
+            return PostAsync(request, new GraphQLQuery {
+                OperationName = operationName,
+                Query = QUERY,
+                Variables = variables
+            });
         }
 
         [HttpPost]
         public async Task<HttpResponseMessage> PostAsync(HttpRequestMessage request, GraphQLQuery query)
         {
-            var inputs = query?.Variables?.ToString()?.ToInputs();
+            var inputs = query?.Variables?.ToInputs();
             var queryToExecute = query.Query;
 
             if (!string.IsNullOrWhiteSpace(query.NamedQuery))
