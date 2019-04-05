@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Relay
+namespace GraphQL.Types
 {
     public class CompositeObjectGraphType : ObjectGraphType
     {

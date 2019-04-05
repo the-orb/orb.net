@@ -1,8 +1,13 @@
-﻿using GraphQL.Types;
+﻿using GraphQL.Entity;
+using GraphQL.Types;
 
 namespace Orb
 {
-    class DivisionQuery : ObjectGraphType
+    class DivisionQuery : EntityGraphType
     {
+        public DivisionQuery(IEntityGraphAdapter adapter)
+            : base(adapter)
+        {
+        }
     }
 }

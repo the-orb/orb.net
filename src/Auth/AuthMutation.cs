@@ -1,4 +1,5 @@
 ﻿using GraphQL;
+using GraphQL.Types;
 
 namespace Auth
 {
@@ -13,7 +14,7 @@ namespace Auth
     ///   }
     /// }
     /// </example>
-    internal class AuthMutation : Relay.CompositeObjectGraphType
+    internal class AuthMutation : CompositeObjectGraphType
     {
         public AuthMutation(IDependencyResolver resolver)
         {

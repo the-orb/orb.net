@@ -1,6 +1,8 @@
-﻿namespace Orb
+﻿using GraphQL.Types;
+
+namespace Orb
 {
-    internal class OrbMutation : Relay.CompositeObjectGraphType
+    internal class OrbMutation : CompositeObjectGraphType
     {
         public OrbMutation()
         {

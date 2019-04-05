@@ -15,6 +15,8 @@ using System.Web.Http;
 namespace Server.Web.Controllers
 {
     using Models;
+    using Newtonsoft.Json.Linq;
+    using System.Threading;
 
     [Route("graphql/starwars")]
     public sealed class StarWarsGraphQLController : ApiController
@@ -39,15 +41,24 @@ namespace Server.Web.Controllers
             };
         }
 
-        public Task<HttpResponseMessage> GetAsync(HttpRequestMessage request)
+        public async Task<HttpResponseMessage> GetAsync(
+            HttpRequestMessage request,
+            string query,
+            string variables,
+            string operationName,
+            CancellationToken cancellation)
         {
-            return PostAsync(request, new GraphQLQuery { Query = "query foo { hero }", Variables = null });
+            var result = await ExecuteAsync(query, operationName, JObject.Parse(variables), cancellation);
+
+            var response = await RespondAsync(request, result);
+
+            return response;
         }
 
         [HttpPost]
-        public async Task<HttpResponseMessage> PostAsync(HttpRequestMessage request, GraphQLQuery query)
+        public async Task<HttpResponseMessage> PostAsync(HttpRequestMessage request, GraphQLQuery query, CancellationToken cancellation)
         {
-            var inputs = query?.Variables?.ToString()?.ToInputs();
+            var inputs = query?.Variables?.ToInputs();
             var queryToExecute = query.Query;
 
             if (!string.IsNullOrWhiteSpace(query.NamedQuery))
@@ -64,9 +75,64 @@ namespace Server.Web.Controllers
 
                 _.ComplexityConfiguration = new ComplexityConfiguration { MaxDepth = 15 };
                 _.FieldMiddleware.Use<InstrumentFieldsMiddleware>();
+                _.CancellationToken = cancellation;
+#if (DEBUG)
+                _.ExposeExceptions = true;
+                _.EnableMetrics = true;
+#endif
 
             }).ConfigureAwait(false);
 
+            var httpResult = result.Errors?.Count > 0
+                ? HttpStatusCode.BadRequest
+                : HttpStatusCode.OK;
+
+            var response = request.CreateResponse(httpResult);
+
+            var stream = new MemoryStream();
+
+            await _writer.WriteAsync(stream, result);
+
+            stream.Position = 0L;
+
+            response.Content = new StreamContent(stream);
+
+            response.Content.Headers.ContentType = new MediaTypeHeaderValue("application/json"); // MimeMapping.GetMimeMapping(imagePath)
+
+            return response;
+        }
+
+        async Task<ExecutionResult> ExecuteAsync(
+            string query,
+            string operationName,
+            JObject variables,
+            CancellationToken cancellation)
+        {
+            var inputs = variables?.ToInputs();
+            var queryToExecute = query;
+
+            var result = await _executer.ExecuteAsync(_ =>
+            {
+                _.Schema = _schema;
+                _.Query = queryToExecute;
+                _.OperationName = operationName;
+                _.Inputs = inputs;
+
+                _.ComplexityConfiguration = new ComplexityConfiguration { MaxDepth = 15 };
+                _.FieldMiddleware.Use<InstrumentFieldsMiddleware>();
+                _.CancellationToken = cancellation;
+#if (DEBUG)
+                _.ExposeExceptions = true;
+                _.EnableMetrics = true;
+#endif
+
+            }).ConfigureAwait(false);
+
+            return result;
+        }
+
+        async Task<HttpResponseMessage> RespondAsync(HttpRequestMessage request, ExecutionResult result)
+        {
             var httpResult = result.Errors?.Count > 0
                 ? HttpStatusCode.BadRequest
                 : HttpStatusCode.OK;

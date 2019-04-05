@@ -1,16 +1,19 @@
-﻿namespace Orb
+﻿using GraphQL.Entity;
+
+namespace Orb
 {
-    internal class OrbQuery : Relay.CompositeObjectGraphType
+    internal class OrbQuery : EntityGraphType
     {
-        public OrbQuery()
+        public OrbQuery(IEntityGraphAdapter adapter)
+            : base(adapter)
         {
-            Extend(new BrandQuery());
-            Extend(new FamilyQuery());
-            Extend(new IndividualQuery());
-            Extend(new MarketQuery());
-            Extend(new MemberQuery());
-            Extend(new OrganizationQuery());
-            Extend(new DivisionQuery());
+            Extend(new BrandQuery(adapter));
+            Extend(new FamilyQuery(adapter));
+            Extend(new IndividualQuery(adapter));
+            Extend(new MarketQuery(adapter));
+            Extend(new MemberQuery(adapter));
+            Extend(new OrganizationQuery(adapter));
+            Extend(new DivisionQuery(adapter));
         }
     }
 }
