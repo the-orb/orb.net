@@ -12,6 +12,7 @@ namespace StarWars
             container.RegisterInstance(new StarWarsData());
             container.RegisterType<StarWarsQuery>();
             container.RegisterType<StarWarsMutation>();
+            container.RegisterType<StarWarsSubscription>();
             container.RegisterType<HumanType>();
             container.RegisterType<HumanInputType>();
             container.RegisterType<DroidType>();

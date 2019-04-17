@@ -94,6 +94,7 @@
     <Compile Include="StarWarsMutation.cs" />
     <Compile Include="StarWarsQuery.cs" />
     <Compile Include="StarWarsSchema.cs" />
+    <Compile Include="StarWarsSubscription.cs" />
     <Compile Include="Types\CharacterInterface.cs" />
     <Compile Include="Types\DroidType.cs" />
     <Compile Include="Types\EpisodeEnum.cs" />

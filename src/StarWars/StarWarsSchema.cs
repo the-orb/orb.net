@@ -10,6 +10,7 @@ namespace StarWars
         {
             Query = resolver.Resolve<StarWarsQuery>();
             Mutation = resolver.Resolve<StarWarsMutation>();
+            Subscription = resolver.Resolve<StarWarsSubscription>();
         }
     }
 }
