@@ -1,8 +1,13 @@
-﻿using GraphQL.Types;
+﻿using GraphQL.Entity;
+using GraphQL.Types;
 
 namespace Orb
 {
-    class MemberQuery : ObjectGraphType
+    class MemberQuery : EntityGraphType
     {
+        public MemberQuery(IEntityGraphAdapter adapter)
+            : base(adapter)
+        {
+        }
     }
 }

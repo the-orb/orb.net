@@ -106,36 +106,59 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComplexGraphResolver.cs" />
+    <Compile Include="Compress.cs" />
+    <Compile Include="ConnectionConverter.cs" />
+    <Compile Include="EntityDocumentExecuter.cs" />
+    <Compile Include="EntityGraphConventions.cs" />
+    <Compile Include="EntityGraphType.cs" />
+    <Compile Include="Filter\GlobalFilters.cs" />
+    <Compile Include="EntityGraphAdapter.cs" />
+    <Compile Include="GraphQlExtensions.cs" />
+    <Compile Include="GraphTypeFinder.cs" />
+    <Compile Include="Guard.cs" />
+    <Compile Include="IEntityGraphAdapter.cs" />
+    <Compile Include="IncludeAppender.cs" />
+    <Compile Include="InternalsVisibleTo.cs" />
+    <Compile Include="Navigation.cs" />
+    <Compile Include="NavigationReader.cs" />
+    <Compile Include="Types\CompositeObjectGraphType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyAccess\Property.cs" />
+    <Compile Include="PropertyAccess\PropertyCache.cs" />
+    <Compile Include="Scalars\GuidGraph.cs" />
+    <Compile Include="Scalars\ScalarGraph.cs" />
+    <Compile Include="Scalars\Scalars.cs" />
+    <Compile Include="Scalars\ShortGraph.cs" />
+    <Compile Include="Scalars\UintGraph.cs" />
+    <Compile Include="Scalars\UlongGraph.cs" />
+    <Compile Include="Scalars\UshortGraph.cs" />
     <Compile Include="StoreMutation.cs" />
     <Compile Include="StoreQuery.cs" />
     <Compile Include="StoreSchema.cs" />
+    <Compile Include="Testing\ClientQueryExecutor.cs" />
+    <Compile Include="Where\ArgumentProcessor_List.cs" />
+    <Compile Include="Where\ArgumentProcessor_Queryable.cs" />
+    <Compile Include="Where\ArgumentReader.cs" />
+    <Compile Include="Where\ArgumentsAppender.cs" />
+    <Compile Include="Where\ExpressionBuilder.cs" />
+    <Compile Include="Where\ExpressionCache.cs" />
+    <Compile Include="Where\FuncBuilder.cs" />
+    <Compile Include="Where\Graphs\ArgumentGraphs.cs" />
+    <Compile Include="Where\Graphs\Comparison.cs" />
+    <Compile Include="Where\Graphs\ComparisonGraph.cs" />
+    <Compile Include="Where\Graphs\OrderBy.cs" />
+    <Compile Include="Where\Graphs\OrderByGraph.cs" />
+    <Compile Include="Where\Graphs\StringComparisonGraph.cs" />
+    <Compile Include="Where\Graphs\WhereExpression.cs" />
+    <Compile Include="Where\Graphs\WhereExpressionGraph.cs" />
+    <Compile Include="Where\ReflectionCache.cs" />
+    <Compile Include="Where\TypeConverter.cs" />
+    <Compile Include="Where\WhereValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Auth\Auth.csproj">
-      <Project>{fa996a4d-9b3d-4efe-814a-90d8c250a6cf}</Project>
-      <Name>Auth</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Life\Life.csproj">
-      <Project>{8ffbadb2-1358-4250-9922-806267ab4239}</Project>
-      <Name>Life</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Orb\Orb.csproj">
-      <Project>{84bcf1c0-dd7c-4e99-ae53-45128a9e996d}</Project>
-      <Name>Orb</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Relay\Relay.csproj">
-      <Project>{1bf08a0a-9f4a-4371-be33-e1c10c53d7f7}</Project>
-      <Name>Relay</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\StarWars\StarWars.csproj">
-      <Project>{c2d5b72e-d087-4572-8e94-7f06fd55c378}</Project>
-      <Name>StarWars</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\RavenDB.Embedded.4.1.4\build\RavenDB.Embedded.targets" Condition="Exists('..\packages\RavenDB.Embedded.4.1.4\build\RavenDB.Embedded.targets')" />

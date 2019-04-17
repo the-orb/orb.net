@@ -1,8 +1,12 @@
-﻿using GraphQL.Types;
+﻿using GraphQL.Entity;
 
 namespace Orb
 {
-    class BrandQuery : ObjectGraphType
+    class BrandQuery : EntityGraphType
     {
+        public BrandQuery(IEntityGraphAdapter adapter)
+            : base(adapter)
+        {
+        }
     }
 }

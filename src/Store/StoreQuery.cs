@@ -1,6 +1,6 @@
 ﻿using GraphQL;
 
-namespace Store
+namespace GraphQL.Entity
 {
     public class StoreQuery : Relay.CompositeObjectGraphType
     {
@@ -8,8 +8,8 @@ namespace Store
         {
             Name = "StoreQuery";
 
-            Extend(resolver.Resolve<Auth.AuthQuery>());
-            Extend(resolver.Resolve<Orb.OrbQuery>());
+            // Extend(resolver.Resolve<Auth.AuthQuery>());
+            // Extend(resolver.Resolve<Orb.OrbQuery>());
         }
     }
 }

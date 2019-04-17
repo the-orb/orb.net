@@ -1,8 +1,9 @@
 ﻿using GraphQL;
+using GraphQL.Types;
 
 namespace Auth
 {
-    internal class AuthQuery : Relay.CompositeObjectGraphType
+    internal class AuthQuery : CompositeObjectGraphType
     {
         public AuthQuery(IDependencyResolver resolver)
         {

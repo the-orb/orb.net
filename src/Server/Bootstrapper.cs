@@ -21,7 +21,6 @@ namespace Server
 
                 container.RegisterType(typeof(GraphQL.Types.Relay.ConnectionType<>), new TransientLifetimeManager());
                 container.RegisterType(typeof(GraphQL.Types.Relay.EdgeType<>), new TransientLifetimeManager());
-                // container.RegisterType<NodeInterface>(new TransientLifetimeManager());
                 container.RegisterType<GraphQL.Types.Relay.PageInfoType>(new TransientLifetimeManager());
 
                 // container.RegisterType<IProductRepository, ProductRepository>(new HierarchicalLifetimeManager());

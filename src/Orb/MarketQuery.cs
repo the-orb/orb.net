@@ -1,8 +1,13 @@
-﻿using GraphQL.Types;
+﻿using GraphQL.Entity;
+using GraphQL.Types;
 
 namespace Orb
 {
-    class MarketQuery : ObjectGraphType
+    class MarketQuery : EntityGraphType
     {
+        public MarketQuery(IEntityGraphAdapter adapter)
+            : base(adapter)
+        {
+        }
     }
 }
